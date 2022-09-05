@@ -11,6 +11,8 @@ class Sejarah extends Model
     public $timestamps = false;
 
     protected $fillable = [
-       'isi'
+        'judul',
+        'isi',
+        'foto'
     ];
 }

@@ -25,8 +25,9 @@ Route::middleware(['middleware'=>'PreventBackHistory'])->group(function () {
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 // Route::get('/', [App\Http\Controllers\BaseController::class, 'index'])->name('index');
-Route::get('/profile', [App\Http\Controllers\VisiMisiController::class, 'about'])->name('visimisi.visimisi');
-Route::get('/news', [App\Http\Controllers\BeritaMainController::class, 'index'])->name('berita.show');
+Route::get('/visi&misi', [App\Http\Controllers\VisiMisiController::class, 'about'])->name('visimisi.visimisi');
+Route::get('/histories', [App\Http\Controllers\SejarahController::class, 'history'])->name('sejarah.history');
+Route::get('/beritaterkini', [App\Http\Controllers\BeritaMainController::class, 'index'])->name('berita.show');
 Route::get('/team', [App\Http\Controllers\BaseController::class, 'team'])->name('team');
 Route::get('/testimonial', [App\Http\Controllers\BaseController::class, 'testimonial'])->name('testimonial');
 Route::get('/donate', [App\Http\Controllers\BaseController::class, 'donate'])->name('donate');
@@ -64,8 +65,8 @@ Route::get('/informasi/delete/{id}','App\Http\Controllers\PengumumanController@d
 Route::get('/visi','App\Http\Controllers\VisiMisiController@index')->name('visimisi.index');
 Route::get('/visimisi/create','App\Http\Controllers\VisiMisiController@create')->name('visimisi.create');
 Route::post('/visimisi/create','App\Http\Controllers\VisiMisiController@store')->name('visimisi.create');
-Route::get('/visimisi/edit/{id}','App\Http\Controllers\VisiMisiController@edit')->name('visimisi.edit');
-Route::post('/visimisi/edit/{id}','App\Http\Controllers\VisiMisiController@update')->name('visimisi.edit');
+Route::get('/visimisi/update/{id}','App\Http\Controllers\VisiMisiController@edit')->name('visimisi.edit');
+Route::post('/visimisi/update/{id}','App\Http\Controllers\VisiMisiController@update')->name('visimisi.edit');
 Route::get('/show/{id}','App\Http\Controllers\VisiMisiController@show')->name('visimisi.show');
 Route::get('/visimisi/delete/{id}','App\Http\Controllers\VisiMisiController@destroy')->name('visimisi.destroy');
 
@@ -83,4 +84,12 @@ Route::post('/user/cariberita','App\Http\Controllers\MainController@cari')->name
 Route::get('/user/{id}','App\Http\Controllers\MainController@show')->name('reader.show_news');
 Route::post('/user/{id}','App\Http\Controllers\MainController@update')->name('reader.komentar');
 Route::get('/user/list/{id}','App\Http\Controllers\MainController@list')->name('reader.list');
+
+Route::get('/kategori','App\Http\Controllers\KategoriController@index')->name('kategori.index');
+Route::get('/category/create','App\Http\Controllers\KategoriController@create')->name('kategori.do_ketagori');
+Route::post('/category/create','App\Http\Controllers\KategoriController@store')->name('kategori.do_ketagori');
+Route::get('/admin/hapus/{id}','App\Http\Controllers\KategoriController@destroy')->name('kategori.delete_kategori');
+Route::post('/admin/kategori/cari','App\Http\Controllers\KategoriController@search')->name('kategori.carikategori');
+Route::get('/category/{id}','App\Http\Controllers\KategoriController@edit')->name('kategori.edit_kategori');
+Route::post('/category/{id}','App\Http\Controllers\KategoriController@update')->name('kategori.do_edit_kategori');
 

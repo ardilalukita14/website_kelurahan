@@ -19,6 +19,14 @@ class SejarahController extends Controller
         }
         return view('sejarah.index', compact('sejarah'));
     }
+
+    public function history() {
+        $semua = sejarah::orderBy('created_at','DESC')
+                ->take(1)
+                ->get();
+        return view('sejarah.main', compact('semua'));
+    }
+
     public function create()
     {
         return view('sejarah.create');
@@ -32,14 +40,24 @@ class SejarahController extends Controller
      */
     public function store(Request $request)
     {
-        sejarah::create([
-            'judul' => $request->judul,
-            'isi' => $request->isi
-        ]);
+        $file = $request->file('foto');
+        $org = $file->getClientOriginalName();
+        $path = 'foto';
+        $file->move($path,$org);
 
-        return redirect('/admin');
+        $sejarah = new sejarah;
+        $sejarah->judul = $request->judul;
+        $sejarah->isi = $request->isi;
+        $sejarah->foto = $org;
+        $sejarah->save();
+        if ($sejarah) {
+            Session::flash('success','Sukses Tambah Data'); 
+            return redirect()->route('sejarah.index');
+        } else {
+            Session::flash('success','Failed Tambah Data');
+            return redirect()->route('sejarah.index');
+        }
     }
-
     /**
      * Display the specified resource.
      *
@@ -73,6 +91,8 @@ class SejarahController extends Controller
      */
     public function update(Request $request, $id)
     {
+        $foto = $request->file('foto');
+        if ($foto == "") {
             $sejarah = sejarah::find($id);
             $sejarah->judul = $request->judul;
             $sejarah->isi = $request->isi;
@@ -85,6 +105,26 @@ class SejarahController extends Controller
                 Session::flash('success','Failed Update Data');
                 return redirect()->route('sejarah.index');
             }
+        } else {
+            $file = $request->file('foto');
+            $org = $file->getClientOriginalName();
+            $path = 'foto';
+            $file->move($path,$org);
+
+            $sejarah= sejarah::find($id);
+            $sejarah->judul = $request->judul;
+            $sejarah->isi = $request->isi;
+            $sejarah->foto = $org;
+            $sejarah->save();
+            if ($sejarah) {
+                Session::flash('success','Sukses Update Data');
+                return redirect()->route('sejarah.index');
+            } else {
+                Session::flash('success','Failed Update Data');
+                return redirect()->route('sejarah.index');
+            }
+        }
+
         }
 
     /**

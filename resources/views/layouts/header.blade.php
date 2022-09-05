@@ -24,8 +24,19 @@
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="navbar-nav ms-auto p-4 p-lg-0">
                     <a href="/" class="nav-item nav-link">Home</a>
-                    <a href="/profile" class="nav-item nav-link">Profile</a>
-                    <a href="/news" class="nav-item nav-link">Berita</a>
+                    <!-- <a href="/profile" class="nav-item nav-link">Profile</a> -->
+                    <a href="/beritaterkini" class="nav-item nav-link">Berita</a>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Profile</a>
+                        <div class="dropdown-menu m-0">
+                            <a href="/visi&misi" class="dropdown-item">Visi & Misi</a>
+                            <a href="/histories" class="dropdown-item">Sejarah Singkat</a>
+                            <a href="/team" class="dropdown-item">Struktur Organisasi</a>
+                            <a href="404" class="dropdown-item">Daftar Nama Pegawai</a>
+                            <a href="/testimonial" class="dropdown-item">Maklumat Pelayanan Publik</a>
+                            <a href="404" class="dropdown-item">Tugas Pokok dan Fungsi</a>
+                        </div>
+                    </div>
                     <div class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pemberdayaan</a>
                         <div class="dropdown-menu m-0">
@@ -65,7 +76,7 @@
                     <a href="/contact" class="nav-item nav-link">Contact</a>
                 </div>
                 <div class="d-none d-lg-flex ms-2">
-                    <a class="btn btn-outline-primary py-2 px-3" href="/admin">
+                    <a class="btn btn-outline-primary py-2 px-3" href="/admin" style="width: 180px;">
                         Login Admin
                         <div class="d-inline-flex btn-sm-square bg-white text-primary rounded-circle ms-2">
                             <i class="fa fa-arrow-right"></i>

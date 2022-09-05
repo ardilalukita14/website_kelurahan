@@ -69,25 +69,27 @@
                                 <strong class="card-title">Data Table</strong>
                             </div>
                             <div class="col-md-8">
-                            <a href="{{route('sejarah.create')}}" class="btn btn-info" style="margin-top:20px; margin-left:5px;">TAMBAH SEJARAH</a>
+                            <a href="{{route('sejarah.create')}}" class="btn btn-info" style="margin-top:20px; margin-left:5px;">TAMBAH DATA SEJARAH</a>
                             </div>
                             <div class="card-body">
                                 <table id="bootstrap-data-table-export" class="table table-striped table-bordered">
                                     <thead>
                                         <tr>
+                                        <th>Judul</th>
                                         <th width="550px">Isi</th>
-                                        <th>Action</th>    
+                                        <th width="200px">Action</th>    
                                         </tr>
                                     </thead>
                                     <tbody>
                                     @foreach ($sejarah as $data)
                                     <tr>
-                                        <td>{{ $data->isi }}</td>
+                                        <td>{{$data->judul}}</td>
+                                        <td>{!! $data->isi !!}</td>
                                         <td>
                                                 
                                     <form action="{{ route('sejarah.destroy',$data->id) }}" method="GET">
                                         <a class="btn btn-info" href="{{ route('sejarah.show',$data->id) }}">Show</a>
-                                        <!-- <a class="btn btn-success" href="{{ route('sejarah.edit',$data->id) }}">Edit</a> -->
+                                        <a class="btn btn-success" href="{{ route('sejarah.edit',$data->id) }}">Edit</a>
                                         <!-- <a href="{{route('pengumuman.edit',$data->id)}}" class="btn btn-success btn-sm">EDIT</a> -->
                                         @csrf
                                         @method('DELETE')

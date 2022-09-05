@@ -68,8 +68,8 @@
                         <div class="card-body">
                             <ul class="list-group list-group-flush">
                             <li class="list-group-item" style="font-size: 16px;"><b>Judul: </b>{{$visimisi->judul}}</li>
-                                <li class="list-group-item" style="font-size: 16px;"><b>Visi: </b>{{$visimisi->visi}}</li>
-                                <li class="list-group-item" style="font-size: 16px;"><b>Misi: </b>{{$visimisi->misi}}</li>
+                                <li class="list-group-item" style="font-size: 16px;"><b>Visi: </b>{!!$visimisi->visi!!}</li>
+                                <li class="list-group-item" style="font-size: 16px;"><b>Misi: </b>{!!$visimisi->misi!!}</li>
                             </ul>
                         </div>
                         <a class="btn btn-success mt-3" href="{{ route('visimisi.index') }}" style="font-size: 16px; margin-left:10px; margin-bottom: 30px;">Kembali</a>

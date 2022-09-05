@@ -24,7 +24,14 @@
                         <a href="/pengumuman"> <i class="menu-icon fa fa-info-circle"></i>Pengumuman</a>
                     </li>
                     <li>
-                        <a href="{{route('sejarah.index')}}"> <i class="menu-icon fa fa-info-circle"></i>Sejarah</a>
+                        <a href="/kategori"> <i class="menu-icon fa fa-cubes"></i>Kategori</a>
+                    </li>
+                    <li class="menu-item-has-children dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-th"></i>Sejarah</a>
+                        <ul class="sub-menu children dropdown-menu">
+                            <li><i class="menu-icon fa fa-th"></i><a href="{{route('sejarah.create')}}">Tambah Data</a></li>
+                            <li><i class="menu-icon fa fa-th"></i><a href="{{ route('sejarah.index')}}">Show Data</a></li>
+                        </ul>
                     </li>
                     <li class="menu-item-has-children dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-th"></i>Visi & Misi</a>

@@ -75,10 +75,10 @@
                                 <table id="bootstrap-data-table-export" class="table table-striped table-bordered">
                                     <thead>
                                         <tr>
-                                        <th width="250px">Judul</th>
-                                        <th width="550px">Visi</th>
-                                        <th width="550px">Misi</th>
-                                        <th>Action</th>    
+                                        <th width="150px">Judul</th>
+                                        <th width="600px">Visi</th>
+                                        <th width="600px">Misi</th>
+                                        <th width="300px">Action</th>    
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -86,8 +86,8 @@
                                     <tr>
 
                                         <td>{{ $data->judul }}</td>
-                                        <td>{{ $data->visi }}</td>
-                                        <td>{{ $data->misi }}</td>
+                                        <td>{!! $data->visi !!}</td>
+                                        <td>{!! $data->misi !!}</td>
                                         <td>
                                                 
                                     <form action="{{ route('visimisi.destroy',$data->id) }}" method="GET">

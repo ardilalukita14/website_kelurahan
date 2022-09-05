@@ -12,30 +12,29 @@
     <title>Sufee Admin - HTML5 Admin Template</title>
     <meta name="description" content="Sufee Admin - HTML5 Admin Template">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
     <link rel="apple-touch-icon" href="apple-icon.png">
     <link rel="shortcut icon" href="favicon.ico">
 
-    <link rel="stylesheet" href="vendors/bootstrap/dist/css/bootstrap.min.css">
+    
     <link rel="stylesheet" href="vendors/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="vendors/themify-icons/css/themify-icons.css">
     <link rel="stylesheet" href="vendors/flag-icon-css/css/flag-icon.min.css">
     <link rel="stylesheet" href="vendors/selectFX/css/cs-skin-elastic.css">
-    <link rel="stylesheet" href="vendors/jqvmap/dist/jqvmap.min.css">
-
-
+    <link rel="stylesheet" href="vendors/datatables.net-bs4/css/dataTables.bootstrap4.min.css">
+    <link rel="stylesheet" href="vendors/datatables.net-buttons-bs4/css/buttons.bootstrap4.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
-
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800' rel='stylesheet' type='text/css'>
-
 </head>
 
 <body>
-    
+    <!-- Left Panel -->
+
 @include('admin.layouts.sidebar')
 @include('admin.layouts.header')
 @extends('admin.layouts.contents')
 @section('content')
+
 
 <div class="breadcrumbs">
             <div class="col-sm-4">
@@ -50,37 +49,39 @@
                     <div class="page-title">
                         <ol class="breadcrumb text-right">
                             <li><a href="#">Dashboard</a></li>
-                            <li><a href="#">Berita</a></li>
-                            <li class="active">Edit berita</li>
+                            <li><a href="#">Visi & Misi</a></li>
+                            <li class="active">Data Visi & Misi</li>
                         </ol>
                     </div>
                 </div>
             </div>
         </div>
 
-            <br></br>        
-            <div class="container mt-5">
-                <div class="row justify-content-center align-items-center">
-                    <div class="card" style="width: 60rem;">
-                        <div class="card-header">
-                            <h5 style="font-size: 18px; font-family: Arial, Helvetica"><b>Edit Data visimisi</h5></b>
-                        </div>
+
+    <div class="container">
+        <div class="row" style="width: 1500px; margin-left:-200px;">
+            <div class="col-md-8 offset-2 mt-5">
+                <div class="card">
+                    <div class="card-header bg-info">
+                        <h6 class="text-white">EDIT DATA VISI & MISI</h6>
+                    </div>
+                    <div class="card-body">
                         <form action="{{route('visimisi.edit',$visimisi->id)}}" method="post" enctype="multipart/form-data">
                 {{csrf_field()}}
-                <div class="form-group" style="margin-left: 50px;">
+                <div class="form-group">
                     <br></br>
                     <label>Judul</label>
                     <input type="text" name="judul" class="form-control" required="" value="{{$visimisi->judul}}" style="width:95%;">
                 </div>
-                <div class="form-group" style="margin-left: 50px;">
-                    <label>visi</label>
-                    <textarea class="form-control" name="isi" required="" style="width:95%;">{{$visimisi->visi}}</textarea>
+                <div class="form-group">
+                    <label>Visi</label>
+                    <textarea class="ckeditor form-control valid" name="visi" required="" style="width:100px;">{{$visimisi->visi}}</textarea>
                 </div>
-                <div class="form-group" style="margin-left: 50px;">
-                    <label>misi</label>
-                    <textarea class="form-control" name="isi" required="" style="width:95%;">{{$visimisi->misi}}</textarea>
+                <div class="form-group">
+                    <label>Misi</label>
+                    <textarea class="ckeditor form-control valid" name="misi" required="" style="width:100px;">{{$visimisi->misi}}</textarea>
                 </div>
-                <input type="submit" value="SIMPAN" class="btn btn-info" style="margin-left: 50px;">
+                <input type="submit" value="SIMPAN" class="btn btn-info">
                 <br></br>
             </form>
                     </div>
@@ -96,39 +97,30 @@
 <!-- Right Panel -->
 
 <script src="vendors/jquery/dist/jquery.min.js"></script>
-<script src="vendors/popper.js/dist/umd/popper.min.js"></script>
-<script src="vendors/bootstrap/dist/js/bootstrap.min.js"></script>
-<script src="assets/js/main.js"></script>
+    <script src="vendors/popper.js/dist/umd/popper.min.js"></script>
+    <script src="vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="assets/js/main.js"></script>
 
 
-<script src="vendors/chart.js/dist/Chart.bundle.min.js"></script>
-<script src="assets/js/dashboard.js"></script>
-<script src="assets/js/widgets.js"></script>
-<script src="vendors/jqvmap/dist/jquery.vmap.min.js"></script>
-<script src="vendors/jqvmap/examples/js/jquery.vmap.sampledata.js"></script>
-<script src="vendors/jqvmap/dist/maps/jquery.vmap.world.js"></script>
-<script>
-(function($) {
-    "use strict";
+    <script src="vendors/datatables.net/js/jquery.dataTables.min.js"></script>
+    <script src="vendors/datatables.net-bs4/js/dataTables.bootstrap4.min.js"></script>
+    <script src="vendors/datatables.net-buttons/js/dataTables.buttons.min.js"></script>
+    <script src="vendors/datatables.net-buttons-bs4/js/buttons.bootstrap4.min.js"></script>
+    <script src="vendors/jszip/dist/jszip.min.js"></script>
+    <script src="vendors/pdfmake/build/pdfmake.min.js"></script>
+    <script src="vendors/pdfmake/build/vfs_fonts.js"></script>
+    <script src="vendors/datatables.net-buttons/js/buttons.html5.min.js"></script>
+    <script src="vendors/datatables.net-buttons/js/buttons.print.min.js"></script>
+    <script src="vendors/datatables.net-buttons/js/buttons.colVis.min.js"></script>
+    <script src="assets/js/init-scripts/data-table/datatables-init.js"></script>
 
-    jQuery('#vmap').vectorMap({
-        map: 'world_en',
-        backgroundColor: null,
-        color: '#ffffff',
-        hoverOpacity: 0.7,
-        selectedColor: '#1de9b6',
-        enableZoom: true,
-        showTooltip: true,
-        values: sample_data,
-        scaleColors: ['#1de9b6', '#03a9f5'],
-        normalizeFunction: 'polynomial'
+    <script src="//cdn.ckeditor.com/4.19.1/standard/ckeditor.js"></script>
+
+    <script type="text/javascript">
+    $(document).ready(function () {
+        $('.ckeditor').ckeditor();
     });
-})(jQuery);
-</script>
-
+    </script>
 </body>
 
 </html>
-
-
-

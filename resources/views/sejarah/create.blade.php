@@ -9,24 +9,22 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Sufee admin - HTML5 admin Template</title>
-    <meta name="description" content="Sufee admin - HTML5 admin Template">
+    <title>Sufee Admin - HTML5 Admin Template</title>
+    <meta name="description" content="Sufee Admin - HTML5 Admin Template">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
     <link rel="apple-touch-icon" href="apple-icon.png">
     <link rel="shortcut icon" href="favicon.ico">
 
-
-    <link rel="stylesheet" href="vendors/bootstrap/dist/css/bootstrap.min.css">
+    
     <link rel="stylesheet" href="vendors/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="vendors/themify-icons/css/themify-icons.css">
     <link rel="stylesheet" href="vendors/flag-icon-css/css/flag-icon.min.css">
     <link rel="stylesheet" href="vendors/selectFX/css/cs-skin-elastic.css">
     <link rel="stylesheet" href="vendors/datatables.net-bs4/css/dataTables.bootstrap4.min.css">
     <link rel="stylesheet" href="vendors/datatables.net-buttons-bs4/css/buttons.bootstrap4.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
 
     <link rel="stylesheet" href="assets/css/style.css">
-
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800' rel='stylesheet' type='text/css'>
 </head>
 
@@ -38,7 +36,8 @@
 @extends('admin.layouts.contents')
 @section('content')
 
-        <div class="breadcrumbs">
+       
+<div class="breadcrumbs">
             <div class="col-sm-4">
                 <div class="page-header float-left">
                     <div class="page-title">
@@ -51,34 +50,49 @@
                     <div class="page-title">
                         <ol class="breadcrumb text-right">
                             <li><a href="#">Dashboard</a></li>
-                            <li><a href="#">Sejarah</a></li>
-                            <li class="active">Sejarah</li>
+                            <li><a href="#">SEJARAH</a></li>
+                            <li class="active">Data SEJARAH</li>
                         </ol>
                     </div>
                 </div>
             </div>
         </div>
 
-        @section('content')
-            <section class="section">
-            <div class="container mt-5">
-            <form action="{{route('sejarah.create')}}" method="post" class="needs-validation" novalidate="novalidate">
-                @csrf
+
+    <div class="container">
+        <div class="row" style="width: 1500px; margin-left:-200px;">
+            <div class="col-md-8 offset-2 mt-5">
                 <div class="card">
-                  <div class="card-header">
-                    <h4>Sejarah</h4>
-                  </div>
-                  <div class="card-body">
-                    <div class="form-group">
-                      <label>Isi</label>
-                      <textarea class="form-control w-100" name="isi" id="isi"></textarea>
+                    <div class="card-header bg-info">
+                        <h6 class="text-white">TAMBAH DATA SEJARAH</h6>
                     </div>
-                  </div>
-                  <div class="card-footer">
-                    <button class="btn btn-primary">Simpan</button>
-                  </div>
+                    <div class="card-body">
+                        <form method="post" action="" enctype="multipart/form-data">
+                            @csrf
+                            <div class="form-group">
+                                <label>Judul</label>
+                                <input type="text" name="judul" class="form-control"/>
+                            </div>  
+
+                            <div class="form-group">
+                                <label><strong>Isi</strong></label>
+                                <textarea class="ckeditor form-control valid" name="isi"></textarea>
+                            </div>
+
+                            <div class="form-group">
+                                <label>Foto</label>
+                                <input type="file" name="foto" class="form-control" required="">
+                            </div>
+
+                            <div class="form-group text-center">
+                                <button type="submit" class="btn btn-success btn-sm">Save</button>
+                            </div>
+                        </form>
+                    </div>
                 </div>
-              </form>
+            </div>
+        </div>
+    </div>
                 </div>
             </div><!-- .animated -->
         </div><!-- .content -->
@@ -92,7 +106,7 @@
     <script src="vendors/jquery/dist/jquery.min.js"></script>
     <script src="vendors/popper.js/dist/umd/popper.min.js"></script>
     <script src="vendors/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="assets/js/admin.js"></script>
+    <script src="assets/js/main.js"></script>
 
 
     <script src="vendors/datatables.net/js/jquery.dataTables.min.js"></script>
@@ -107,7 +121,16 @@
     <script src="vendors/datatables.net-buttons/js/buttons.colVis.min.js"></script>
     <script src="assets/js/init-scripts/data-table/datatables-init.js"></script>
 
+    <script src="//cdn.ckeditor.com/4.19.1/standard/ckeditor.js"></script>
 
+    <script type="text/javascript">
+    $(document).ready(function () {
+        $('.ckeditor').ckeditor()({
+            height: 400, 
+            placeholder: 'Pesan',
+        });
+    });
+    </script>
 </body>
 
 </html>
