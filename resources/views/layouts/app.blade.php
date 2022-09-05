@@ -26,6 +26,7 @@
 
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
@@ -55,6 +56,13 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    <script src="//cdn.ckeditor.com/4.19.1/standard/ckeditor.js"></script>
+
+    <script type="text/javascript">
+    $(document).ready(function () {
+        $('.ckeditor').ckeditor();
+    });
+    </script>
 </body>
 
 </html>

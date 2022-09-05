@@ -91,8 +91,8 @@
                             </div>
                             <div class="col-12">
                                 <div class="form-floating">
-                                    <textarea class="form-control" placeholder="Pesan" name="pesan" id="pesan" style="height: 100px"></textarea>
-                                    <label for="pesan">Pesan</label>
+                                <!-- <label for="pesan" style="margin-bottom:-100px;">Pesan</label> -->
+                                <textarea class="ckeditor form-control valid" name="pesan" id="pesan" style="height: 100px"></textarea>                        
                                 </div>
                             </div>
                             <div class="col-12">

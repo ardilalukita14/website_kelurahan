@@ -22,6 +22,7 @@
     <link rel="stylesheet" href="vendors/flag-icon-css/css/flag-icon.min.css">
     <link rel="stylesheet" href="vendors/selectFX/css/cs-skin-elastic.css">
     <link rel="stylesheet" href="vendors/jqvmap/dist/jqvmap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
 
 
     <link rel="stylesheet" href="assets/css/style.css">
@@ -74,7 +75,7 @@
                 </div>
                 <div class="form-group" style="margin-left: 50px;">
                     <label>Isi Pengumuman</label>
-                    <textarea class="form-control" name="isi" required="" style="width:95%;">{{$pengumuman->isi}}</textarea>
+                    <textarea class="ckeditor form-control valid" name="isi" required="" style="width:95%;">{{$pengumuman->isi}}</textarea>
                 </div>
                 <div class="form-group" style="margin-left: 50px;">
                     <label>Status Pengumuman</label>
@@ -129,6 +130,14 @@
     });
 })(jQuery);
 </script>
+
+<script src="//cdn.ckeditor.com/4.19.1/standard/ckeditor.js"></script>
+
+    <script type="text/javascript">
+    $(document).ready(function () {
+        $('.ckeditor').ckeditor();
+    });
+    </script>
 
 </body>
 

@@ -24,6 +24,8 @@
     <link rel="stylesheet" href="vendors/selectFX/css/cs-skin-elastic.css">
     <link rel="stylesheet" href="vendors/datatables.net-bs4/css/dataTables.bootstrap4.min.css">
     <link rel="stylesheet" href="vendors/datatables.net-buttons-bs4/css/buttons.bootstrap4.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+
 
     <link rel="stylesheet" href="assets/css/style.css">
 
@@ -78,7 +80,7 @@
                     </div>
                     <div class="form-group">
                       <label>Isi</label>
-                      <textarea class="form-control w-100" name="isi" id="isi"></textarea>
+                      <textarea class="ckeditor form-control valid" name="isi" id="isi"></textarea>
                     </div>
                     <div class="form-group">
                     <label>Status</label>
@@ -121,7 +123,13 @@
     <script src="vendors/datatables.net-buttons/js/buttons.print.min.js"></script>
     <script src="vendors/datatables.net-buttons/js/buttons.colVis.min.js"></script>
     <script src="assets/js/init-scripts/data-table/datatables-init.js"></script>
+    <script src="//cdn.ckeditor.com/4.19.1/standard/ckeditor.js"></script>
 
+    <script type="text/javascript">
+    $(document).ready(function () {
+        $('.ckeditor').ckeditor();
+    });
+    </script>
 
 </body>
 

@@ -70,7 +70,7 @@
                                 <li class="list-group-item" style="font-size: 16px;"><b>Nama: </b>{{$saran->nama}}</li>
                                 <li class="list-group-item" style="font-size: 16px;"><b>Email: </b>{{$saran->email}}</li>
                                 <li class="list-group-item" style="font-size: 16px;"><b>Subjek: </b>{{$saran->subjek}}</li>
-                                <li class="list-group-item" style="font-size: 16px;"><b>Pesan: </b>{{$saran->pesan}}</li>
+                                <li class="list-group-item" style="font-size: 16px;"><b>Pesan: </b>{!!$saran->pesan!!}</li>
                             </ul>
                         </div>
                         <a class="btn btn-success mt-3" href="{{ route('saran.index') }}" style="font-size: 16px;">Kembali</a>

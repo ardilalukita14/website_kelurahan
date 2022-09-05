@@ -85,7 +85,7 @@
                                     <tr>
 
                                         <td>{{ $data->judul }}</td>
-                                        <td>{{ $data->isi }}</td>
+                                        <td>{!! $data->isi !!}</td>
                                         <td>
                                                 
                                     <form action="{{ route('pengumuman.destroy',$data->id) }}" method="GET">
