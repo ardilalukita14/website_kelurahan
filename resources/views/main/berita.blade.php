@@ -9,8 +9,8 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Sufee admin - HTML5 admin Template</title>
-    <meta name="description" content="Sufee admin - HTML5 admin Template">
+    <title>Sufee main - HTML5 main Template</title>
+    <meta name="description" content="Sufee main - HTML5 main Template">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="apple-touch-icon" href="apple-icon.png">
@@ -73,28 +73,31 @@
                         </div>
                             <div class="card-body">
                                 <table id="bootstrap-data-table-export" class="table table-striped table-bordered">
-                                    <thead>
-                                        <tr>
-                                        <th>Judul</th>
-                                        <th>Author</th>
-                                        <th>Tanggal</th>
-                                        <th>Action</th>      
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                    @foreach($data as $d)
-                                    <tr>
-                                        <td>{{$d->judul}}</td>
-                                        <td>{{$d->author}}</td>
-                                        <td>{{$d->tanggal}}</td>
-                                        <td>
-                                            <a href="{{route('main.show',$d->id)}}" class="btn btn-info btn-sm">DETAIL</a>
-                                            <a href="{{route('main.delete',$d->id)}}" class="btn btn-warning btn-sm" onclick="return confirm('Apakah Anda yakin untuk menghapus data ini ?')" >HAPUS</a>
-                                            <a href="{{route('main.edit',$d->id)}}" class="btn btn-success btn-sm">EDIT</a>
-                                        </td>
-                                    </tr>
-                                    @endforeach
-
+                                <thead>    
+                            <tr class="table-info">
+                                <th>JUDUL</th>
+                                <th>AUTHOR</th>
+                                <th>KATEGORI</th>
+                                <th>TANGGAL</th>
+                                <th width="250px">AKSI</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                             @foreach($data as $d)
+                        <tr>
+                            <td>{{$d->judul}}</td>
+                            <td>{{$d->author}}</td>
+                            <td>{{$d->kategori->nama}}</td>
+                            <td>{{$d->tanggal}}</td>
+                            <td>
+                                <a href="{{route('main.show',$d->id)}}" class="btn btn-info btn-sm">DETAIL</a>
+                                <a href="{{route('main.delete',$d->id)}}" class="btn btn-warning btn-sm" onclick="return confirm('Apakah Anda yakin untuk menghapus data ini ?')" >HAPUS</a>
+                                <a href="{{route('main.edit',$d->id)}}" class="btn btn-success btn-sm">EDIT</a>
+                            </td>
+                        </tr>
+                        @endforeach
+                    </tbody>
+                </table>
                 </div>
             </div><!-- .animated -->
         </div><!-- .content -->
@@ -108,7 +111,7 @@
     <script src="vendors/jquery/dist/jquery.min.js"></script>
     <script src="vendors/popper.js/dist/umd/popper.min.js"></script>
     <script src="vendors/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="assets/js/admin.js"></script>
+    <script src="assets/js/main.js"></script>
 
 
     <script src="vendors/datatables.net/js/jquery.dataTables.min.js"></script>

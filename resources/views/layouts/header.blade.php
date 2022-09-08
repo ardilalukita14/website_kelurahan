@@ -40,11 +40,11 @@
                     <div class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pemberdayaan</a>
                         <div class="dropdown-menu m-0">
-                            <a href="/service" class="dropdown-item">Bidang Kesehatan</a>
-                            <a href="/donate" class="dropdown-item">Bidang Pendidikan</a>
-                            <a href="/team" class="dropdown-item">Bidang Ekonomi</a>
-                            <a href="/testimonial" class="dropdown-item">Bidang Pariwisata</a>
-                            <a href="404" class="dropdown-item">Bidang Kamtibmas</a>
+                            <a href="/kesehatan" class="dropdown-item">Bidang Kesehatan</a>
+                            <a href="/pendidikan" class="dropdown-item">Bidang Pendidikan</a>
+                            <a href="/ekonomi" class="dropdown-item">Bidang Ekonomi</a>
+                            <a href="/pariwisata" class="dropdown-item">Bidang Pariwisata</a>
+                            <a href="/kamtibmas" class="dropdown-item">Bidang Kamtibmas</a>
                         </div>
                     </div>
                     <div class="nav-item dropdown">
@@ -66,11 +66,11 @@
                     <div class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Kelembagaan</a>
                         <div class="dropdown-menu m-0">
-                            <a href="/service" class="dropdown-item">Karang Taruna</a>
-                            <a href="/donate" class="dropdown-item">PKK</a>
-                            <a href="/team" class="dropdown-item">UMKM</a>
-                            <a href="/testimonial" class="dropdown-item">LPMK</a>
-                            <a href="404" class="dropdown-item">BKM</a>
+                            <a href="/karangtaruna" class="dropdown-item">Karang Taruna</a>
+                            <a href="/pkk" class="dropdown-item">PKK</a>
+                            <a href="/umkm" class="dropdown-item">UMKM</a>
+                            <a href="/lpmk" class="dropdown-item">LPMK</a>
+                            <a href="bkm" class="dropdown-item">BKM</a>
                         </div>
                     </div>
                     <a href="/contact" class="nav-item nav-link">Contact</a>

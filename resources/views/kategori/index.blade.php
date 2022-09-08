@@ -68,9 +68,9 @@
                             <div class="card-header">
                                 <strong class="card-title">Data Table</strong>
                             </div>
-                            <div class="col-md-8">
+                            <!-- <div class="col-md-8">
                             <a href="{{route('kategori.do_ketagori')}}" class="btn btn-info" style="margin-top:20px; margin-left:5px;">TAMBAH DATA KATEGORI</a>
-                            </div>
+                            </div> -->
                             <div class="card-body">
                                 <table id="bootstrap-data-table-export" class="table table-striped table-bordered">
                                     <thead>
@@ -99,8 +99,10 @@
                                         <button type="submit" class="btn btn-danger">Delete</button>
                                     </form>
                                                 </td>
-                                        </tr>
                                     @endforeach
+                                    </tr>
+                                    </tbody>
+                                </table>
                 </div>
             </div><!-- .animated -->
         </div><!-- .content -->

@@ -78,11 +78,20 @@
                     <textarea class="ckeditor form-control valid" name="isi" required=""></textarea>
                 </div>
                 <div class="form-group">
+                    <label>MASUKAN KATEGORI</label>
+                    <select name="kategori" class="form-control">
+                        @foreach($data as $d)
+                        <option value="{{$d->id}}">{{$d->nama}}</option>
+                        @endforeach
+                    </select>
+                </div>
+                <div class="form-group">
                     <label>MASUKAN FOTO</label>
                     <input type="file" name="foto" class="form-control" required="">
                 </div>
                 <input type="submit" value="SIMPAN" class="btn btn-info">
             </form>
+            <br></br>
                 </div>
             </div><!-- .animated -->
         </div><!-- .content -->

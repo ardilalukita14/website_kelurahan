@@ -24,7 +24,13 @@
                         <a href="/pengumuman"> <i class="menu-icon fa fa-info-circle"></i>Pengumuman</a>
                     </li>
                     <li>
-                        <a href="/kategori"> <i class="menu-icon fa fa-cubes"></i>Kategori</a>
+                        <a href="/kartukeluarga"> <i class="menu-icon fa fa-info-circle"></i>Kartu Keluarga (KK)</a>
+                    </li>
+                    <li>
+                        <a href="/kartupenduduk"> <i class="menu-icon fa fa-info-circle"></i>Kartu Penduduk (KTP)</a>
+                    </li>
+                    <li>
+                        <a href="/kategori"> <i class=""></i>Kategori</a>
                     </li>
                     <li class="menu-item-has-children dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-th"></i>Sejarah</a>
@@ -41,15 +47,18 @@
                         </ul>
                     </li>
 
-                    <h3 class="menu-title">Icons</h3><!-- /.menu-title -->
+                    <li>
+                        <a href="/komentar"> <i class="menu-icon fa fa-cubes"></i>Komentar</a>
+                    </li>
+                    <!-- <h3 class="menu-title">Icons</h3>/.menu-title -->
 
-                    <li class="menu-item-has-children dropdown">
+                    <!-- <li class="menu-item-has-children dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-tasks"></i>Icons</a>
                         <ul class="sub-menu children dropdown-menu">
                             <li><i class="menu-icon fa fa-fort-awesome"></i><a href="font-fontawesome.html">Font Awesome</a></li>
                             <li><i class="menu-icon ti-themify-logo"></i><a href="font-themify.html">Themefy Icons</a></li>
                         </ul>
-                    </li>
+                    </li> -->
                     <li>
                         <a href="/saran"> <i class="menu-icon ti-email"></i>Kritik dan Saran </a>
                     </li>

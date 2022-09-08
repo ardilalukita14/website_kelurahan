@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Berita;
+use App\Models\Kategori;
+use App\Models\User;
 use Session;
 
 
@@ -17,7 +19,8 @@ class BeritaController extends Controller
             //fungsi eloquent menampilkan data menggunakan pagination
             $data = Berita::orderBy('id', 'desc')->paginate(10); // Pagination menampilkan 5 data
         }
-        return view('main.berita',compact('data'));
+        $user=User::all();
+        return view('main.berita',compact('data', 'user'));
     }
 
     public function cari(Request $request)
@@ -34,7 +37,9 @@ class BeritaController extends Controller
      */
     public function create()
     {
-        return view('main.create');
+        $data=Kategori::all();
+        $user=User::all();
+        return view('main.create',compact('data', 'user'));
     }
 
     /**
@@ -51,6 +56,7 @@ class BeritaController extends Controller
         $file->move($path,$org);
 
         $Berita = new Berita;
+        $Berita->id_kategori = $request->kategori;
         $Berita->judul = $request->judul;
         $Berita->author = $request->author;
         $Berita->tanggal = date('Y-m-d');
@@ -88,8 +94,9 @@ class BeritaController extends Controller
      */
     public function edit($id)
     {
+        $data = Kategori::all();
         $berita = Berita::find($id);
-        return view('main.edit',compact('berita'));
+        return view('main.edit',compact('data','berita'));
     }
 
     /**
@@ -104,6 +111,7 @@ class BeritaController extends Controller
         $foto = $request->file('foto');
         if ($foto == "") {
             $Berita = Berita::find($id);
+            $Berita->id_kategori = $request->kategori;
             $Berita->judul = $request->judul;
             $Berita->author = $request->author;
             $Berita->isi = $request->isi;
@@ -125,6 +133,7 @@ class BeritaController extends Controller
             $file->move($path,$org);
 
             $Berita = Berita::find($id) ;
+            $Berita->id_kategori = $request->kategori;
             $Berita->judul = $request->judul;
             $Berita->author = $request->author;
             $Berita->isi = $request->isi;

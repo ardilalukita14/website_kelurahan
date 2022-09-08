@@ -80,6 +80,15 @@
                     <textarea class="ckeditor form-control valid" name="isi" required="">{{$berita->isi}}</textarea>
                 </div>
                 <div class="form-group">
+                    <label>MASUKAN KATEGORI</label>
+                    <select name="kategori" class="form-control">
+                        <option value="{{$berita->kategori->id}}">{{$berita->kategori->nama}}</option>
+                        @foreach($data as $d)
+                        <option value="{{$d->id}}">{{$d->nama}}</option>
+                        @endforeach
+                    </select>
+                </div>
+                <div class="form-group">
                     <label>MASUKAN FOTO</label>
                     <img src="{{asset('foto/'.$berita->foto)}}" style="width: 500px; height: 250px;">
                     <br></br>

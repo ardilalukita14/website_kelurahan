@@ -77,7 +77,7 @@
                                 <small>Berita</small>
                             </div>
                             <h5 class="mb-3">{{substr($all->judul,0,50)}}...</h5>
-                            <p>{{substr($all->isi,0,80)}}...</p>
+                            <p>{!!substr($all->isi,0,80)!!}...</p>
                         </div>
                         <div class="position-relative mt-auto">
                             <img class="img-fluid" src="{{asset('foto/'.$all->foto)}}" style="height:250px; width:500px;" alt="">

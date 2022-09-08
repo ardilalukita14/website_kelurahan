@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Berita;
 use App\Models\Pengumuman;
+use App\Models\Komentar;
 use Session;
 
 class MainController extends Controller
@@ -73,7 +74,11 @@ class MainController extends Controller
                 ->where('tanggal', date('Y-m-d'))
                 ->take(6)
                 ->get();
-        return view('reader.detail',compact('news','semua'));
+        $komen = Komentar::orderBy('created_at','DESC')
+                ->where('berita_id',$id)
+                ->where('status','aktif')
+                ->get();
+        return view('reader.detail',compact('news','semua', 'komen'));
     }
 
     /**
@@ -96,8 +101,24 @@ class MainController extends Controller
      */
     public function update(Request $request, $id)
     {
-        
+        $komen = new Komentar;
+        $komen->nama = $request->nama;
+        $komen->email = $request->email;
+        $komen->keterangan = $request->isi;
+        $komen->tanggal = date('Y-m-d');
+        $komen->status = 'aktif';
+        $komen->berita_id = $id;
+        $komen->save();
+
+        if ($komen) {
+            Session::flash('success','Komentar berhasil ditambahkan');
+            return redirect()->back();
+        } else {
+            Session::flash('success','Komentar gagal ditambahkan');
+            return redirect()->back();
+        }
     }
+
 
     /**
      * Remove the specified resource from storage.

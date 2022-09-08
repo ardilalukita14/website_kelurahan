@@ -19,7 +19,7 @@ class KategoriController extends Controller
             $data = Kategori::where('nama', 'like', "%" . $request->search . "%")->paginate(5);
         } else { // Jika tidak melakukan pencarian judul
             //fungsi eloquent menampilkan data menggunakan pagination
-            $data = Kategori::orderBy('id', 'desc')->paginate(5); // Pagination menampilkan 5 data
+            $data = Kategori::orderBy('id', 'desc')->paginate(11); // Pagination menampilkan 5 data
         }
        return view('kategori.index',compact('data'));
     }
@@ -29,7 +29,6 @@ class KategoriController extends Controller
         $category =  Kategori::orderBy('created_at','DESC')
         ->where('kategori_id',5)
         ->where('status','aktif')
-        ->take(4)
         ->get();
         return view('reader.ekonomi',compact('ekonomi')) ;
     }
@@ -79,7 +78,7 @@ class KategoriController extends Controller
                 ->where('berita_id',$id)
                 ->where('status','aktif')
                 ->get();
-        return view('reader.detail',compact('news','semua','komen'));
+        return view('reader.detail',compact('ekonom'));
     }
 
     /**

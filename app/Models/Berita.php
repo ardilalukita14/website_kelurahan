@@ -12,6 +12,6 @@ class Berita extends Model
 
     public function kategori()
     {
-    	return $this->belongsTo('App\Models\Kategori', 'kategori_id', 'id');
+    	return $this->belongsTo('App\Models\Kategori', 'id_kategori', 'id');
     }
 }

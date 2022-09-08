@@ -70,9 +70,10 @@
                             <li class="list-group-item" style="font-size: 16px;"><b>Judul Berita: </b>{{$data->judul}}</li>
                                 <li class="list-group-item" style="font-size: 16px;"><b>Author Berita: </b>{{$data->author}}</li>
                                 <li class="list-group-item" style="font-size: 16px;"><b>Tanggal Terbit: </b>{{$data->tanggal}}</li>
-                                <li class="list-group-item" style="font-size: 16px;"><b>Isi Berita: </b>{{$data->isi}}</li>
+                                <li class="list-group-item" style="font-size: 16px;"><b>Isi Berita: </b>{!!$data->isi!!}</li>
                                 <li class="list-group-item" style="font-size: 16px;"><b>Berita Populer: </b>{{$data->top_news}}</li>
                                 <li class="list-group-item" style="font-size: 16px;"><b>Status Berita: </b>{{$data->status}}</li>
+                                <li class="list-group-item" style="font-size: 16px;"><b>Kategori Berita: </b>{{$data->kategori->nama}}</li>
                                 <li class="list-group-item" style="font-size: 16px;"><b>Foto Berita</li>
                                 <li class="list-group-item"><img style="width: 200px" src="{{asset('foto/'.$data->foto)}}"></li>
                             </ul>
