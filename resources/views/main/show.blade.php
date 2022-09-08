@@ -63,7 +63,7 @@
                 <div class="row justify-content-center align-items-center">
                     <div class="card" style="width: 50rem; margin-left: 80px;">
                         <div class="card-header">
-                            <h5 style="font-size: 18px; font-family: Arial, Helvetica"><b>Detail Data Saran Pengunjung</h5></b>
+                            <h5 style="font-size: 18px; font-family: Arial, Helvetica"><b>Detail Data Berita</h5></b>
                         </div>
                         <div class="card-body">
                             <ul class="list-group list-group-flush">

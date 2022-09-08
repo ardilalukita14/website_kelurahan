@@ -23,21 +23,17 @@
                     <li>
                         <a href="/pengumuman"> <i class="menu-icon fa fa-info-circle"></i>Pengumuman</a>
                     </li>
-                    <li>
+                    <!-- <li>
+                        <a href="/lpmk"> <i class="menu-icon fa fa-info-circle"></i>LPMK</a>
+                    </li> -->
+                    <!-- <li>
                         <a href="/kartukeluarga"> <i class="menu-icon fa fa-info-circle"></i>Kartu Keluarga (KK)</a>
                     </li>
                     <li>
                         <a href="/kartupenduduk"> <i class="menu-icon fa fa-info-circle"></i>Kartu Penduduk (KTP)</a>
-                    </li>
+                    </li> -->
                     <li>
-                        <a href="/kategori"> <i class=""></i>Kategori</a>
-                    </li>
-                    <li class="menu-item-has-children dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-th"></i>Sejarah</a>
-                        <ul class="sub-menu children dropdown-menu">
-                            <li><i class="menu-icon fa fa-th"></i><a href="{{route('sejarah.create')}}">Tambah Data</a></li>
-                            <li><i class="menu-icon fa fa-th"></i><a href="{{ route('sejarah.index')}}">Show Data</a></li>
-                        </ul>
+                        <a href="/kategori"> <i class="menu-icon fa fa-check-square-o"></i>Kategori</a>
                     </li>
                     <li class="menu-item-has-children dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-th"></i>Visi & Misi</a>
@@ -62,14 +58,17 @@
                     <li>
                         <a href="/saran"> <i class="menu-icon ti-email"></i>Kritik dan Saran </a>
                     </li>
-                    <li class="menu-item-has-children dropdown">
+                    <li>
+                        <a href="/layanan"> <i class="menu-icon fa fa-volume-control-phone "></i>Layanan</a>
+                    </li>
+                    <!-- <li class="menu-item-has-children dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-bar-chart"></i>Charts</a>
                         <ul class="sub-menu children dropdown-menu">
                             <li><i class="menu-icon fa fa-line-chart"></i><a href="charts-chartjs.html">Chart JS</a></li>
                             <li><i class="menu-icon fa fa-area-chart"></i><a href="charts-flot.html">Flot Chart</a></li>
                             <li><i class="menu-icon fa fa-pie-chart"></i><a href="charts-peity.html">Peity Chart</a></li>
                         </ul>
-                    </li>
+                    </li> -->
 
                     <li class="menu-item-has-children dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-area-chart"></i>Maps</a>

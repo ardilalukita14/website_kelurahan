@@ -109,26 +109,21 @@ Route::post('/admin/kategori/cari','App\Http\Controllers\KategoriController@sear
 Route::get('/category/{id}','App\Http\Controllers\KategoriController@edit')->name('kategori.edit_kategori');
 Route::post('/category/{id}','App\Http\Controllers\KategoriController@update')->name('kategori.do_edit_kategori');
 
-Route::get('/kartukeluarga','App\Http\Controllers\KKController@index')->name('kartukeluarga.index');
-Route::get('/kk/create','App\Http\Controllers\KKController@create')->name('kartukeluarga.create');
-Route::post('/kk/create','App\Http\Controllers\KKController@store')->name('kartukeluarga.store');
-Route::get('/kk/edit/{id}','App\Http\Controllers\KKController@edit')->name('kartukeluarga.edit');
-Route::post('/kk/edit/{id}','App\Http\Controllers\KKController@update')->name('kartukeluarga.edit');
-Route::get('/kk/{id}','App\Http\Controllers\KKController@show')->name('kartukeluarga.show');
-Route::get('/kk/delete/{id}','App\Http\Controllers\KKController@destroy')->name('kartukeluarga.destroy');
+Route::get('/layanan','App\Http\Controllers\LayananController@index')->name('layanan.index');
+Route::get('/service/create','App\Http\Controllers\LayananController@create')->name('layanan.do_layanan');
+Route::post('/service/create','App\Http\Controllers\LayananController@store')->name('layanan.do_layanan');
+Route::get('/services/hapus/{id}','App\Http\Controllers\LayananController@destroy')->name('layanan.delete_layanan');
+Route::post('/services/service/cari','App\Http\Controllers\LayananController@search')->name('layanan.carilayanan');
+Route::get('/service/{id}','App\Http\Controllers\LayananController@edit')->name('layanan.edit_layanan');
+Route::post('/service/{id}','App\Http\Controllers\LayananController@update')->name('layanan.do_edit_layanan');
 
-Route::get('/kartupenduduk','App\Http\Controllers\KTPController@index')->name('kartupenduduk.index');
-Route::get('/ktp/create','App\Http\Controllers\KTPController@create')->name('kartupenduduk.create');
-Route::post('/ktp/create','App\Http\Controllers\KTPController@store')->name('kartupenduduk.store');
-Route::get('/ktp/edit/{id}','App\Http\Controllers\KTPController@edit')->name('kartupenduduk.edit');
-Route::post('/ktp/edit/{id}','App\Http\Controllers\KTPController@update')->name('kartupenduduk.edit');
-Route::get('/ktp/{id}','App\Http\Controllers\KTPController@show')->name('kartupenduduk.show');
-Route::get('/ktp/delete/{id}','App\Http\Controllers\KTPController@destroy')->name('kartupenduduk.destroy');
+Route::get('/maincontent','App\Http\Controllers\ContentController@index')->name('content.index');
+Route::get('/contents/create','App\Http\Controllers\ContentController@create')->name('content.do_content');
+Route::post('/contents/create','App\Http\Controllers\ContentController@store')->name('content.do_content');
+Route::get('/contents/hapus/{id}','App\Http\Controllers\ContentController@destroy')->name('content.delete_content');
+Route::post('/contents/cari','App\Http\Controllers\ContentController@search')->name('content.caricontent');
+Route::get('/contents/{id}','App\Http\Controllers\ContentController@edit')->name('content.edit_content');
+Route::post('/contents/{id}','App\Http\Controllers\ContentController@update')->name('content.do_edit_content');
+Route::get('/contentshow/{id}','App\Http\Controllers\ContentController@show')->name('content.show');
+Route::get('/contents/delete/{id}','App\Http\Controllers\ContentController@destroy')->name('content.delete');
 
-Route::get('/lembagalpmk','App\Http\Controllers\LPMKontroller@index')->name('lpmk.index');
-Route::get('/lpmk/create','App\Http\Controllers\LPMKController@create')->name('lpmk.create');
-Route::post('/lpmk/create','App\Http\Controllers\LPMKController@store')->name('lpmk.store');
-Route::get('/lpmk/edit/{id}','App\Http\Controllers\LPMKController@edit')->name('lpmk.edit');
-Route::post('/lpmk/edit/{id}','App\Http\Controllers\LPMKController@update')->name('lpmk.edit');
-Route::get('/lpmk/{id}','App\Http\Controllers\LPMKController@show')->name('lpmk.show');
-Route::get('/lpmk/delete/{id}','App\Http\Controllers\LPMKController@destroy')->name('lpmk.destroy');
