@@ -27,6 +27,7 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 // Route::get('/', [App\Http\Controllers\BaseController::class, 'index'])->name('index');
 Route::get('/visi&misi', [App\Http\Controllers\VisiMisiController::class, 'about'])->name('visimisi.visimisi');
 Route::get('/histories', [App\Http\Controllers\SejarahController::class, 'history'])->name('sejarah.history');
+Route::get('/structures', [App\Http\Controllers\StrukturController::class, 'structure'])->name('struktur.main');
 Route::get('/beritaterkini', [App\Http\Controllers\BeritaMainController::class, 'index'])->name('berita.show');
 Route::get('/kamtibmas', [App\Http\Controllers\BeritaMainController::class, 'kamtibmas'])->name('kamtibmas.show');
 Route::get('/kesehatan', [App\Http\Controllers\BeritaMainController::class, 'kesehatan'])->name('kesehatan.show');
@@ -38,10 +39,16 @@ Route::get('/pkk', [App\Http\Controllers\BeritaMainController::class, 'pkk'])->n
 Route::get('/umkm', [App\Http\Controllers\BeritaMainController::class, 'umkm'])->name('umkm.show');
 Route::get('/lpmk', [App\Http\Controllers\BeritaMainController::class, 'lpmk'])->name('lpmk.show');
 Route::get('/bkm', [App\Http\Controllers\BeritaMainController::class, 'bkm'])->name('bkm.show');
-Route::get('/team', [App\Http\Controllers\BaseController::class, 'team'])->name('team');
-Route::get('/testimonial', [App\Http\Controllers\BaseController::class, 'testimonial'])->name('testimonial');
-Route::get('/donate', [App\Http\Controllers\BaseController::class, 'donate'])->name('donate');
-Route::get('/contact', [App\Http\Controllers\BaseController::class, 'contact'])->name('contact');
+Route::get('/kk', [App\Http\Controllers\BeritaMainController::class, 'kk'])->name('kk.show');
+Route::get('/ktp', [App\Http\Controllers\BeritaMainController::class, 'ktp'])->name('ktp.show');
+Route::get('/dokkel', [App\Http\Controllers\BeritaMainController::class, 'dokkel'])->name('dokkel.show');
+Route::get('/pp', [App\Http\Controllers\BeritaMainController::class, 'pp'])->name('pp.show');
+Route::get('/ppd', [App\Http\Controllers\BeritaMainController::class, 'ppd'])->name('ppd.show');
+Route::get('/keteranganmenikah', [App\Http\Controllers\BeritaMainController::class, 'km'])->name('km.show');
+Route::get('/ahliwaris', [App\Http\Controllers\BeritaMainController::class, 'kaw'])->name('kaw.show');
+Route::get('/dokumenkematian', [App\Http\Controllers\BeritaMainController::class, 'dokem'])->name('dokem.show');
+Route::get('/sktm', [App\Http\Controllers\BeritaMainController::class, 'ktm'])->name('ktm.show');
+Route::get('/skck', [App\Http\Controllers\BeritaMainController::class, 'skck'])->name('skck.show');
 
 Route::group(['middleware'=>['admin','auth','PreventBackHistory']], function(){
 Route::get('/admin', [App\Http\Controllers\AdminController::class, 'admin'])->name('admin');
@@ -85,6 +92,14 @@ Route::get('/visimisi/update/{id}','App\Http\Controllers\VisiMisiController@edit
 Route::post('/visimisi/update/{id}','App\Http\Controllers\VisiMisiController@update')->name('visimisi.edit');
 Route::get('/show/{id}','App\Http\Controllers\VisiMisiController@show')->name('visimisi.show');
 Route::get('/visimisi/delete/{id}','App\Http\Controllers\VisiMisiController@destroy')->name('visimisi.destroy');
+
+Route::get('/struktur','App\Http\Controllers\StrukturController@index')->name('struktur.index');
+Route::get('/structure/create','App\Http\Controllers\StrukturController@create')->name('struktur.create');
+Route::post('/structure/create','App\Http\Controllers\StrukturController@store')->name('struktur.create');
+Route::get('/structure/update/{id}','App\Http\Controllers\StrukturController@edit')->name('struktur.edit');
+Route::post('/structure/update/{id}','App\Http\Controllers\StrukturController@update')->name('struktur.edit');
+Route::get('/structure/show/{id}','App\Http\Controllers\StrukturController@show')->name('struktur.show');
+Route::get('/structure/delete/{id}','App\Http\Controllers\StrukturController@destroy')->name('struktur.destroy');
 
 Route::get('/history','App\Http\Controllers\SejarahController@index')->name('sejarah.index');
 Route::get('/sejarah/create','App\Http\Controllers\SejarahController@create')->name('sejarah.create');

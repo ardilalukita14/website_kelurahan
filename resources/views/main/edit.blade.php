@@ -68,19 +68,19 @@
                 {{csrf_field()}}
                 <div class="form-group">
                     <br></br>
-                    <label>MASUKAN JUDUL BERITA</label>
+                    <label>MASUKKAN JUDUL BERITA</label>
                     <input type="text" name="judul" class="form-control" required="" value="{{$berita->judul}}" >
                 </div>
                 <div class="form-group">
-                    <label>MASUKAN AUTHOR BERITA</label>
+                    <label>MASUKKAN AUTHOR BERITA</label>
                     <input type="text" name="author" class="form-control" required="" value="{{$berita->author}}" >
                 </div>
                 <div class="form-group">
-                    <label>MASUKAN ISI BERITA</label>
+                    <label>MASUKKAN ISI BERITA</label>
                     <textarea class="ckeditor form-control valid" name="isi" required="">{{$berita->isi}}</textarea>
                 </div>
                 <div class="form-group">
-                    <label>MASUKAN KATEGORI</label>
+                    <label>MASUKKAN KATEGORI</label>
                     <select name="kategori" class="form-control">
                         <option value="{{$berita->kategori->id}}">{{$berita->kategori->nama}}</option>
                         @foreach($data as $d)
@@ -89,7 +89,7 @@
                     </select>
                 </div>
                 <div class="form-group">
-                    <label>MASUKAN FOTO</label>
+                    <label>MASUKKAN FOTO</label>
                     <img src="{{asset('foto/'.$berita->foto)}}" style="width: 500px; height: 250px;">
                     <br></br>
                     <input type="file" name="foto" class="form-control">

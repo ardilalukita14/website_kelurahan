@@ -66,19 +66,19 @@
             <form action="{{route('main.create')}}" method="post" enctype="multipart/form-data" style="margin-left: 80px;">
                 {{csrf_field()}}
                 <div class="form-group">
-                    <label>MASUKAN JUDUL BERITA</label>
+                    <label>MASUKKAN JUDUL BERITA</label>
                     <input type="text" name="judul" class="form-control" required=""  >
                 </div>
                 <div class="form-group">
-                    <label>MASUKAN AUTHOR BERITA</label>
+                    <label>MASUKKAN AUTHOR BERITA</label>
                     <input type="text" name="author" class="form-control" required="" value="{{ Auth::user()->name }}">
                 </div>
                 <div class="form-group">
-                    <label>MASUKAN ISI BERITA</label>
+                    <label>MASUKKAN ISI BERITA</label>
                     <textarea class="ckeditor form-control valid" name="isi" required=""></textarea>
                 </div>
                 <div class="form-group">
-                    <label>MASUKAN KATEGORI</label>
+                    <label>MASUKKAN KATEGORI</label>
                     <select name="kategori" class="form-control">
                         @foreach($data as $d)
                         <option value="{{$d->id}}">{{$d->nama}}</option>
@@ -86,7 +86,7 @@
                     </select>
                 </div>
                 <div class="form-group">
-                    <label>MASUKAN FOTO</label>
+                    <label>MASUKKAN FOTO</label>
                     <input type="file" name="foto" class="form-control" required="">
                 </div>
                 <input type="submit" value="SIMPAN" class="btn btn-info">

@@ -66,15 +66,15 @@
             <form action="{{route('content.do_content')}}" method="post" enctype="multipart/form-data" style="margin-left: 80px;">
                 {{csrf_field()}}
                 <div class="form-group">
-                    <label>MASUKAN JUDUL PELAYANAN</label>
+                    <label>MASUKKAN JUDUL PELAYANAN</label>
                     <input type="text" name="judul" class="form-control" required=""  >
                 </div>
                 <div class="form-group">
-                    <label>MASUKAN DESKRIPSI PELAYANAN</label>
+                    <label>MASUKKAN DESKRIPSI PELAYANAN</label>
                     <textarea class="ckeditor form-control valid" name="isi" required=""></textarea>
                 </div>
                 <div class="form-group">
-                    <label>MASUKAN JENIS PELAYANAN</label>
+                    <label>MASUKKAN JENIS PELAYANAN</label>
                     <select name="layanan" class="form-control">
                         @foreach($data as $d)
                         <option value="{{$d->id}}">{{$d->nama}}</option>

@@ -50,16 +50,16 @@
                     <div class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Layanan</a>
                         <div class="dropdown-menu m-0">
-                            <a href="/service" class="dropdown-item">Pembuatan KK</a>
-                            <a href="/donate" class="dropdown-item">Pembuatan KTP</a>
-                            <a href="/team" class="dropdown-item">Pembuatan Dokumen Kelahiran</a>
-                            <a href="/testimonial" class="dropdown-item">Pengantar Pindah</a>
-                            <a href="404" class="dropdown-item">Pengantar Pindah Datang</a>
-                            <a href="/testimonial" class="dropdown-item">Keterangan Untuk Menikah</a>
-                            <a href="404" class="dropdown-item">Keterangan Ahli Waris</a>
-                            <a href="404" class="dropdown-item">Pembuatan Dokumen Kematian</a>
-                            <a href="404" class="dropdown-item">Surat Keterangan Tidak Mampu</a>
-                            <a href="404" class="dropdown-item" style="width: 80px;">SKCK</a>
+                            <a href="/kk" class="dropdown-item">Pembuatan KK</a>
+                            <a href="/ktp" class="dropdown-item">Pembuatan KTP</a>
+                            <a href="/dokkel" class="dropdown-item">Pembuatan Dokumen Kelahiran</a>
+                            <a href="/pp" class="dropdown-item">Pengantar Pindah</a>
+                            <a href="/ppd" class="dropdown-item">Pengantar Pindah Datang</a>
+                            <a href="/keteranganmenikah" class="dropdown-item">Keterangan Untuk Menikah</a>
+                            <a href="/ahliwaris" class="dropdown-item">Keterangan Ahli Waris</a>
+                            <a href="/dokumenkematian" class="dropdown-item">Pembuatan Dokumen Kematian</a>
+                            <a href="/sktm" class="dropdown-item">Surat Keterangan Tidak Mampu</a>
+                            <a href="/skck" class="dropdown-item" style="width: 80px;">SKCK</a>
                             <a href="404" class="dropdown-item">Form Unduhan</a>
                         </div>
                     </div>
@@ -70,7 +70,7 @@
                             <a href="/pkk" class="dropdown-item">PKK</a>
                             <a href="/umkm" class="dropdown-item">UMKM</a>
                             <a href="/lpmk" class="dropdown-item">LPMK</a>
-                            <a href="bkm" class="dropdown-item">BKM</a>
+                            <a href="/bkm" class="dropdown-item">BKM</a>
                         </div>
                     </div>
                     <a href="/contact" class="nav-item nav-link">Contact</a>

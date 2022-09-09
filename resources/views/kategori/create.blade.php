@@ -70,11 +70,11 @@
                         <form method="post" action="" enctype="multipart/form-data">
                             @csrf
                             <div class="form-group">
-                            <label>Masukan Nama Kategori</label>
+                            <label>Masukkan Nama Kategori</label>
 								<input type="text" name="nama" class="form-control" required="">
 							</div>
 							<div class="form-group">
-								<label>Masukan Keterangan Kategori</label>
+								<label>Masukkan Keterangan Kategori</label>
 								<textarea class="ckeditor form-control valid" name="ket" required="" style="height: 150px"></textarea>
 							</div>
 

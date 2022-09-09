@@ -68,15 +68,15 @@
                 {{csrf_field()}}
                 <div class="form-group">
                     <br></br>
-                    <label>MASUKAN JUDUL PELAYANAN</label>
+                    <label>MASUKKAN JUDUL PELAYANAN</label>
                     <input type="text" name="judul" class="form-control" required="" value="{{$content->judul}}" >
                 </div>
                 <div class="form-group">
-                    <label>MASUKAN DESKRIPSI PELAYANAN</label>
+                    <label>MASUKKAN DESKRIPSI PELAYANAN</label>
                     <textarea class="ckeditor form-control valid" name="isi" required="">{{$content->isi}}</textarea>
                 </div>
                 <div class="form-group">
-                    <label>MASUKAN JENIS PELAYANAN</label>
+                    <label>MASUKKAN JENIS PELAYANAN</label>
                     <select name="layanan" class="form-control">
                         <option value="{{$content->layanan->id}}">{{$content->layanan->nama}}</option>
                         @foreach($data as $d)

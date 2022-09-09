@@ -68,15 +68,15 @@
 			{{csrf_field()}}
 			<br></br>
 			<div class="form-group">
-				<label>Masukan Nama Layanan</label>
+				<label>Masukkan Nama Layanan</label>
 				<input type="text" name="nama" class="form-control" required="" value="{{$data->nama}}">
 			</div>
 			<div class="form-group">
-				<label>Masukan Keterangan layanan</label>
+				<label>Masukkan Keterangan layanan</label>
 				<textarea class="ckeditor form-control valid" name="ket" required="" style="height: 150px">{!!$data->keterangan!!}</textarea>
 			</div>
 			<div class="form-group">
-				<label>Masukan Status</label>
+				<label>Masukkan Status</label>
 				<select class="form-control" name="status">
 					<option>{{$data->status}}</option>
 					<option>aktif</option>
