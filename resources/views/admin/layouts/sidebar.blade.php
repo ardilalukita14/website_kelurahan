@@ -7,7 +7,7 @@
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-menu" aria-controls="main-menu" aria-expanded="false" aria-label="Toggle navigation">
                     <i class="fa fa-bars"></i>
                 </button>
-                <a class="navbar-brand" href="./"><img src="images/logo.png" alt="Logo"></a>
+                <a class="navbar-brand" href="./"><img src="img/logokelurahan3.png" alt="Logo"></a>
                 <a class="navbar-brand hidden" href="./"><img src="images/logo2.png" alt="Logo"></a>
             </div>
 
@@ -16,68 +16,81 @@
                     <li class="active">
                         <a href="/admin"> <i class="menu-icon fa fa-dashboard"></i>Dashboard </a>
                     </li>
-                    <h3 class="menu-title">UI elements</h3><!-- /.menu-title -->
-                    <li>
-                        <a href="/berita"> <i class="menu-icon fa fa-newspaper-o"></i>Berita</a>
+
+                    <!-- /.menu-title -->
+                    <h3 class="menu-title">Informasi</h3>
+                    <li class="menu-item-has-children dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-newspaper-o"></i>Berita</a>
+                        <ul class="sub-menu children dropdown-menu">
+                            <li><i class="menu-icon fa fa-th"></i><a href="{{route('main.create')}}">Tambah Data</a></li>
+                            <li><i class="menu-icon fa fa-th"></i><a href="{{ route('main.berita')}}">Show Data</a></li>
+                        </ul>
                     </li>
-                    <li>
-                        <a href="/pengumuman"> <i class="menu-icon fa fa-info-circle"></i>Pengumuman</a>
+                    <li class="menu-item-has-children dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-info-circle"></i>Pengumuman</a>
+                        <ul class="sub-menu children dropdown-menu">
+                            <li><i class="menu-icon fa fa-th"></i><a href="{{route('pengumuman.create')}}">Tambah Data</a></li>
+                            <li><i class="menu-icon fa fa-th"></i><a href="{{ route('pengumuman.index')}}">Show Data</a></li>
+                        </ul>
                     </li>
-                    <!-- <li>
-                        <a href="/lpmk"> <i class="menu-icon fa fa-info-circle"></i>LPMK</a>
-                    </li> -->
-                    <!-- <li>
-                        <a href="/kartukeluarga"> <i class="menu-icon fa fa-info-circle"></i>Kartu Keluarga (KK)</a>
-                    </li>
-                    <li>
-                        <a href="/kartupenduduk"> <i class="menu-icon fa fa-info-circle"></i>Kartu Penduduk (KTP)</a>
-                    </li> -->
                     <li>
                         <a href="/kategori"> <i class="menu-icon fa fa-check-square-o"></i>Kategori</a>
                     </li>
+
+                    <!-- /.menu-title -->
+                    <h3 class="menu-title">Profile</h3>
                     <li class="menu-item-has-children dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-th"></i>Visi & Misi</a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-rocket"></i>Visi & Misi</a>
                         <ul class="sub-menu children dropdown-menu">
                             <li><i class="menu-icon fa fa-th"></i><a href="{{route('visimisi.create')}}">Tambah Data</a></li>
                             <li><i class="menu-icon fa fa-th"></i><a href="{{ route('visimisi.index')}}">Show Data</a></li>
                         </ul>
                     </li>
-
-                    <li>
-                        <a href="/komentar"> <i class="menu-icon fa fa-cubes"></i>Komentar</a>
-                    </li>
-                    <!-- <h3 class="menu-title">Icons</h3>/.menu-title -->
-
-                    <!-- <li class="menu-item-has-children dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-tasks"></i>Icons</a>
+                    <li class="menu-item-has-children dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-history"></i>Sejarah</a>
                         <ul class="sub-menu children dropdown-menu">
-                            <li><i class="menu-icon fa fa-fort-awesome"></i><a href="font-fontawesome.html">Font Awesome</a></li>
-                            <li><i class="menu-icon ti-themify-logo"></i><a href="font-themify.html">Themefy Icons</a></li>
+                            <li><i class="menu-icon fa fa-th"></i><a href="{{route('sejarah.create')}}">Tambah Data</a></li>
+                            <li><i class="menu-icon fa fa-th"></i><a href="{{ route('sejarah.index')}}">Show Data</a></li>
                         </ul>
-                    </li> -->
+                    </li>
+                    <li>
+                        <a href="/struktur"> <i class="menu-icon fa fa-sitemap"></i>Struktur Organisasi</a>
+                    </li>
+                    <li class="menu-item-has-children dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-users"></i>Daftar Pegawai</a>
+                        <ul class="sub-menu children dropdown-menu">
+                            <li><i class="menu-icon fa fa-th"></i><a href="{{route('pegawai.create')}}">Tambah Data</a></li>
+                            <li><i class="menu-icon fa fa-th"></i><a href="{{ route('pegawai.index')}}">Show Data</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="/maklumat"> <i class="menu-icon fa fa-bell "></i>Maklumat Pelayanan </a>
+                    </li>
+                    <li>
+                        <a href="/maklumat"> <i class="menu-icon fa fa-briefcase"></i>Tugas Pokok & Fungsi</a>
+                    </li>
+
+                    <!-- /.menu-title -->
+                    <h3 class="menu-title">Layanan</h3>
+                    <li class="menu-item-has-children dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-handshake-o"></i>Pelayanan Publik</a>
+                        <ul class="sub-menu children dropdown-menu">
+                            <li><i class="menu-icon fa fa-th"></i><a href="{{route('layanan.do_layanan')}}">Tambah Data</a></li>
+                            <li><i class="menu-icon fa fa-th"></i><a href="{{ route('layanan.index')}}">Show Data</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- /.menu-title -->
+                    <h3 class="menu-title">Kotak Saran</h3>
                     <li>
                         <a href="/saran"> <i class="menu-icon ti-email"></i>Kritik dan Saran </a>
                     </li>
                     <li>
-                        <a href="/layanan"> <i class="menu-icon fa fa-volume-control-phone "></i>Layanan</a>
+                        <a href="/komentar"> <i class="menu-icon fa fa-comments"></i>Komentar</a>
                     </li>
-                    <!-- <li class="menu-item-has-children dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-bar-chart"></i>Charts</a>
-                        <ul class="sub-menu children dropdown-menu">
-                            <li><i class="menu-icon fa fa-line-chart"></i><a href="charts-chartjs.html">Chart JS</a></li>
-                            <li><i class="menu-icon fa fa-area-chart"></i><a href="charts-flot.html">Flot Chart</a></li>
-                            <li><i class="menu-icon fa fa-pie-chart"></i><a href="charts-peity.html">Peity Chart</a></li>
-                        </ul>
-                    </li> -->
 
-                    <li class="menu-item-has-children dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-area-chart"></i>Maps</a>
-                        <ul class="sub-menu children dropdown-menu">
-                            <li><i class="menu-icon fa fa-map-o"></i><a href="maps-gmap.html">Google Maps</a></li>
-                            <li><i class="menu-icon fa fa-street-view"></i><a href="maps-vector.html">Vector Maps</a></li>
-                        </ul>
-                    </li>
-                    <h3 class="menu-title">Extras</h3><!-- /.menu-title -->
+                    <!-- /.menu-title -->
+                    <h3 class="menu-title">More</h3>
                     <li>
                         <a href="/"> <i class="menu-icon fa fa-home"></i>Home </a>
                     </li>

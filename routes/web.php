@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\SaranController;
+use App\Http\Controllers\FileController;
+use App\Http\Controllers\ProfileController;
 
 /*
 |--------------------------------------------------------------------------
@@ -25,9 +27,13 @@ Route::middleware(['middleware'=>'PreventBackHistory'])->group(function () {
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 // Route::get('/', [App\Http\Controllers\BaseController::class, 'index'])->name('index');
+Route::get('/','App\Http\Controllers\MainController@index')->name('reader.show');
 Route::get('/visi&misi', [App\Http\Controllers\VisiMisiController::class, 'about'])->name('visimisi.visimisi');
 Route::get('/histories', [App\Http\Controllers\SejarahController::class, 'history'])->name('sejarah.history');
 Route::get('/structures', [App\Http\Controllers\StrukturController::class, 'structure'])->name('struktur.main');
+Route::get('/employees', [App\Http\Controllers\PegawaiController::class, 'pegawai'])->name('pegawai.main');
+Route::get('/maklumatpelayanan', [App\Http\Controllers\MaklumatController::class, 'maklumat'])->name('maklumat.main');
+Route::get('/filesupload', [App\Http\Controllers\FileController::class, 'fileupload'])->name('file.main');
 Route::get('/beritaterkini', [App\Http\Controllers\BeritaMainController::class, 'index'])->name('berita.show');
 Route::get('/kamtibmas', [App\Http\Controllers\BeritaMainController::class, 'kamtibmas'])->name('kamtibmas.show');
 Route::get('/kesehatan', [App\Http\Controllers\BeritaMainController::class, 'kesehatan'])->name('kesehatan.show');
@@ -78,12 +84,20 @@ Route::post('/informasi/edit/{id}','App\Http\Controllers\PengumumanController@up
 Route::get('/informasi/{id}','App\Http\Controllers\PengumumanController@show')->name('pengumuman.show');
 Route::get('/informasi/delete/{id}','App\Http\Controllers\PengumumanController@destroy')->name('pengumuman.destroy');
 
+
+Route::get('/pegawai','App\Http\Controllers\PegawaiController@index')->name('pegawai.index');
+Route::get('/employee/create','App\Http\Controllers\PegawaiController@create')->name('pegawai.create');
+Route::post('/employee/create','App\Http\Controllers\PegawaiController@store')->name('pegawai.create');
+Route::post('/employee/berita/cari','App\Http\Controllers\PegawaiController@cari')->name('pegawai.cari');
+Route::get('/employee/edit/{id}','App\Http\Controllers\PegawaiController@edit')->name('pegawai.edit');
+Route::post('/employee/edit/{id}','App\Http\Controllers\PegawaiController@update')->name('pegawai.edit');
+Route::get('/employee/{id}','App\Http\Controllers\PegawaiController@show')->name('pegawai.show');
+Route::get('/employee/delete/{id}','App\Http\Controllers\PegawaiController@destroy')->name('pegawai.destroy');
+
 Route::get('/komentar','App\Http\Controllers\KomentarController@index')->name('komentar.komentar');
 Route::get('/detail_komen/{id}','App\Http\Controllers\KomentarController@show')->name('komentar.edit_komen');
 Route::post('edit_komen/{id}','App\Http\Controllers\KomentarController@update')->name('komentar.do_editkomen');
 Route::get('/delete_komen/{id}','App\Http\Controllers\KomentarController@destroy')->name('komentar.delete_komen');
-
-});
 
 Route::get('/visi','App\Http\Controllers\VisiMisiController@index')->name('visimisi.index');
 Route::get('/visimisi/create','App\Http\Controllers\VisiMisiController@create')->name('visimisi.create');
@@ -101,6 +115,14 @@ Route::post('/structure/update/{id}','App\Http\Controllers\StrukturController@up
 Route::get('/structure/show/{id}','App\Http\Controllers\StrukturController@show')->name('struktur.show');
 Route::get('/structure/delete/{id}','App\Http\Controllers\StrukturController@destroy')->name('struktur.destroy');
 
+Route::get('/maklumat','App\Http\Controllers\MaklumatController@index')->name('maklumat.index');
+Route::get('/maklumatlayanan/create','App\Http\Controllers\MaklumatController@create')->name('maklumat.create');
+Route::post('/maklumatlayanan/create','App\Http\Controllers\MaklumatController@store')->name('maklumat.create');
+Route::get('/maklumatlayanan/update/{id}','App\Http\Controllers\MaklumatController@edit')->name('maklumat.edit');
+Route::post('/maklumatlayanan/update/{id}','App\Http\Controllers\MaklumatController@update')->name('maklumat.edit');
+Route::get('/maklumatlayanan/show/{id}','App\Http\Controllers\MaklumatController@show')->name('maklumat.show');
+Route::get('/maklumatlayanandelete/{id}','App\Http\Controllers\MaklumatController@destroy')->name('maklumat.destroy');
+
 Route::get('/history','App\Http\Controllers\SejarahController@index')->name('sejarah.index');
 Route::get('/sejarah/create','App\Http\Controllers\SejarahController@create')->name('sejarah.create');
 Route::post('/sejarah/create','App\Http\Controllers\SejarahController@store')->name('sejarah.create');
@@ -109,7 +131,6 @@ Route::post('/sejarah/edit/{id}','App\Http\Controllers\SejarahController@update'
 Route::get('/sejarah/{id}','App\Http\Controllers\SejarahController@show')->name('sejarah.show');
 Route::get('/sejarah/delete/{id}','App\Http\Controllers\SejarahController@destroy')->name('sejarah.destroy');
 
-Route::get('/','App\Http\Controllers\MainController@index')->name('reader.show');
 // Route::get('/show','App\Http\Controllers\MainController@search')->name('search');
 Route::post('/detail/cariberita','App\Http\Controllers\MainController@cari')->name('reader.cr_berita');
 Route::get('/detail/{id}','App\Http\Controllers\MainController@show')->name('reader.show_news');
@@ -142,3 +163,8 @@ Route::post('/contents/{id}','App\Http\Controllers\ContentController@update')->n
 Route::get('/contentshow/{id}','App\Http\Controllers\ContentController@show')->name('content.show');
 Route::get('/contents/delete/{id}','App\Http\Controllers\ContentController@destroy')->name('content.delete');
 
+Route::resource('files', FileController::class);
+Route::get('profile', [ProfileController::class, 'edit'])->name('profile.edit');
+Route::patch('profile', [ProfileController::class, 'update'])->name('profile.update');
+
+});

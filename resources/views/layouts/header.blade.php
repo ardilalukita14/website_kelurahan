@@ -31,9 +31,9 @@
                         <div class="dropdown-menu m-0">
                             <a href="/visi&misi" class="dropdown-item">Visi & Misi</a>
                             <a href="/histories" class="dropdown-item">Sejarah Singkat</a>
-                            <a href="/team" class="dropdown-item">Struktur Organisasi</a>
-                            <a href="404" class="dropdown-item">Daftar Nama Pegawai</a>
-                            <a href="/testimonial" class="dropdown-item">Maklumat Pelayanan Publik</a>
+                            <a href="/structures" class="dropdown-item">Struktur Organisasi</a>
+                            <a href="/employees" class="dropdown-item">Daftar Nama Pegawai</a>
+                            <a href="/maklumatpelayanan" class="dropdown-item">Maklumat Pelayanan Publik</a>
                             <a href="404" class="dropdown-item">Tugas Pokok dan Fungsi</a>
                         </div>
                     </div>
@@ -60,7 +60,7 @@
                             <a href="/dokumenkematian" class="dropdown-item">Pembuatan Dokumen Kematian</a>
                             <a href="/sktm" class="dropdown-item">Surat Keterangan Tidak Mampu</a>
                             <a href="/skck" class="dropdown-item" style="width: 80px;">SKCK</a>
-                            <a href="404" class="dropdown-item">Form Unduhan</a>
+                            <a href="/filesupload" class="dropdown-item">Form Unduhan</a>
                         </div>
                     </div>
                     <div class="nav-item dropdown">

@@ -9,13 +9,15 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Sufee Admin - HTML5 Admin Template</title>
-    <meta name="description" content="Sufee Admin - HTML5 Admin Template">
+    <title>Kelurahan Nambangan Kidul</title>
+    <meta name="description" content="Kelurahan Nambangan Kidul">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <link rel="apple-touch-icon" href="apple-icon.png">
     <link rel="shortcut icon" href="favicon.ico">
 
-    
+
+    <link rel="stylesheet" href="vendors/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="vendors/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="vendors/themify-icons/css/themify-icons.css">
     <link rel="stylesheet" href="vendors/flag-icon-css/css/flag-icon.min.css">
@@ -25,6 +27,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
 
     <link rel="stylesheet" href="assets/css/style.css">
+
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800' rel='stylesheet' type='text/css'>
 </head>
 
@@ -36,8 +39,7 @@
 @extends('admin.layouts.contents')
 @section('content')
 
-       
-<div class="breadcrumbs">
+        <div class="breadcrumbs">
             <div class="col-sm-4">
                 <div class="page-header float-left">
                     <div class="page-title">
@@ -50,14 +52,13 @@
                     <div class="page-title">
                         <ol class="breadcrumb text-right">
                             <li><a href="#">Dashboard</a></li>
-                            <li><a href="#">Layanan</a></li>
+                            <li><a href="#">Layanan/a></li>
                             <li class="active">Data Layanan</li>
                         </ol>
                     </div>
                 </div>
             </div>
         </div>
-
 
     <div class="container">
         <div class="row" style="width: 1500px; margin-left:-200px;">
@@ -90,11 +91,7 @@
                                 <button type="submit" class="btn btn-success btn-sm">Save</button>
                             </div>
                         </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+                        <br></br>
                 </div>
             </div><!-- .animated -->
         </div><!-- .content -->
@@ -107,8 +104,8 @@
 
     <script src="vendors/jquery/dist/jquery.min.js"></script>
     <script src="vendors/popper.js/dist/umd/popper.min.js"></script>
-    <!-- <script src="vendors/bootstrap/dist/js/bootstrap.min.js"></script> -->
-    <script src="assets/js/main.js"></script>
+    <script src="vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="assets/js/admin.js"></script>
 
 
     <script src="vendors/datatables.net/js/jquery.dataTables.min.js"></script>
@@ -129,7 +126,7 @@
     $(document).ready(function () {
         $('.ckeditor').ckeditor();
     });
-    </script>
+</script>
 </body>
 
 </html>
