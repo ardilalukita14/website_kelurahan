@@ -67,7 +67,10 @@
                         <a href="/maklumat"> <i class="menu-icon fa fa-bell "></i>Maklumat Pelayanan </a>
                     </li>
                     <li>
-                        <a href="/maklumat"> <i class="menu-icon fa fa-briefcase"></i>Tugas Pokok & Fungsi</a>
+                        <a href="/time"> <i class="menu-icon fa fa-bell "></i>Jadwal Pelayanan </a>
+                    </li>
+                    <li>
+                        <a href="/tupoksi"> <i class="menu-icon fa fa-briefcase"></i>Tugas Pokok & Fungsi</a>
                     </li>
 
                     <!-- /.menu-title -->

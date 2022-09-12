@@ -26,11 +26,14 @@ Route::middleware(['middleware'=>'PreventBackHistory'])->group(function () {
 });
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-// Route::get('/', [App\Http\Controllers\BaseController::class, 'index'])->name('index');
 Route::get('/','App\Http\Controllers\MainController@index')->name('reader.show');
+Route::get('/contact', [App\Http\Controllers\BaseController::class, 'contact'])->name('contact');
+Route::get('/standarpelayanan', [App\Http\Controllers\BaseController::class, 'standar'])->name('standarpelayanan');
 Route::get('/visi&misi', [App\Http\Controllers\VisiMisiController::class, 'about'])->name('visimisi.visimisi');
 Route::get('/histories', [App\Http\Controllers\SejarahController::class, 'history'])->name('sejarah.history');
+Route::get('/tupoksikelurahan', [App\Http\Controllers\TupoksiController::class, 'tupoksi'])->name('tupoksi.main');
 Route::get('/structures', [App\Http\Controllers\StrukturController::class, 'structure'])->name('struktur.main');
+Route::get('/jadwalpelayanan', [App\Http\Controllers\TimeController::class, 'times'])->name('time.main');
 Route::get('/employees', [App\Http\Controllers\PegawaiController::class, 'pegawai'])->name('pegawai.main');
 Route::get('/maklumatpelayanan', [App\Http\Controllers\MaklumatController::class, 'maklumat'])->name('maklumat.main');
 Route::get('/filesupload', [App\Http\Controllers\FileController::class, 'fileupload'])->name('file.main');
@@ -131,6 +134,14 @@ Route::post('/sejarah/edit/{id}','App\Http\Controllers\SejarahController@update'
 Route::get('/sejarah/{id}','App\Http\Controllers\SejarahController@show')->name('sejarah.show');
 Route::get('/sejarah/delete/{id}','App\Http\Controllers\SejarahController@destroy')->name('sejarah.destroy');
 
+Route::get('/tupoksi','App\Http\Controllers\TupoksiController@index')->name('tupoksi.index');
+Route::get('/detailtupoksi/create','App\Http\Controllers\TupoksiController@create')->name('tupoksi.create');
+Route::post('/detailtupoksi/create','App\Http\Controllers\TupoksiController@store')->name('tupoksi.create');
+Route::get('/detailtupoksi/edit/{id}','App\Http\Controllers\TupoksiController@edit')->name('tupoksi.edit');
+Route::post('/detailtupoksi/edit/{id}','App\Http\Controllers\TupoksiController@update')->name('tupoksi.edit');
+Route::get('/detailtupoksi/{id}','App\Http\Controllers\TupoksiController@show')->name('tupoksi.show');
+Route::get('/detailtupoksi/delete/{id}','App\Http\Controllers\TupoksiController@destroy')->name('tupoksi.destroy');
+
 // Route::get('/show','App\Http\Controllers\MainController@search')->name('search');
 Route::post('/detail/cariberita','App\Http\Controllers\MainController@cari')->name('reader.cr_berita');
 Route::get('/detail/{id}','App\Http\Controllers\MainController@show')->name('reader.show_news');
@@ -166,5 +177,13 @@ Route::get('/contents/delete/{id}','App\Http\Controllers\ContentController@destr
 Route::resource('files', FileController::class);
 Route::get('profile', [ProfileController::class, 'edit'])->name('profile.edit');
 Route::patch('profile', [ProfileController::class, 'update'])->name('profile.update');
+
+Route::get('/time','App\Http\Controllers\TimeController@index')->name('time.index');
+Route::get('/times/create','App\Http\Controllers\TimeController@create')->name('time.create');
+Route::post('/times/create','App\Http\Controllers\TimeController@store')->name('time.create');
+Route::get('/times/update/{id}','App\Http\Controllers\TimeController@edit')->name('time.edit');
+Route::post('/times/update/{id}','App\Http\Controllers\TimeController@update')->name('time.edit');
+Route::get('/times/show/{id}','App\Http\Controllers\TimeController@show')->name('time.show');
+Route::get('/times/delete/{id}','App\Http\Controllers\TimeController@destroy')->name('time.destroy');
 
 });

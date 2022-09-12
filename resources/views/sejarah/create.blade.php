@@ -64,7 +64,7 @@
             <div class="col-md-8 offset-2 mt-5">
                 <div class="card">
                     <div class="card-header bg-info">
-                        <h6 class="text-white">TAMBAH DATA SEJARAH</h6>
+                        <h6 class="text-white">SEJARAH</h6>
                     </div>
                     <div class="card-body">
                         <form method="post" action="" enctype="multipart/form-data">

@@ -34,7 +34,7 @@
                             <a href="/structures" class="dropdown-item">Struktur Organisasi</a>
                             <a href="/employees" class="dropdown-item">Daftar Nama Pegawai</a>
                             <a href="/maklumatpelayanan" class="dropdown-item">Maklumat Pelayanan Publik</a>
-                            <a href="404" class="dropdown-item">Tugas Pokok dan Fungsi</a>
+                            <a href="/tupoksikelurahan" class="dropdown-item">Tugas Pokok dan Fungsi</a>
                         </div>
                     </div>
                     <div class="nav-item dropdown">

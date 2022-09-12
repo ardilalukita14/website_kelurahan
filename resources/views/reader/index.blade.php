@@ -153,8 +153,8 @@
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                     <div class="service-item bg-white text-center h-100 p-4 p-xl-5">
                         <img class="img-fluid mb-4" src="img/icon1.png" style="width:100px; height:100px;" alt="">
-                        <h4 class="mb-3">Alur Layanan</h4>
-                        <p class="mb-4" style="margin-top:55px;">Klik button di bawah untuk detail alur pelayanan.</p>
+                        <h4 class="mb-3">Jam Layanan</h4>
+                        <p class="mb-4" style="margin-top:55px;">Klik button di bawah untuk melihat detail jam pelayanan.</p>
                         <a class="btn btn-outline-primary px-3" href="">
                             Learn More
                             <div class="d-inline-flex btn-sm-square bg-primary text-white rounded-circle ms-2">
@@ -168,7 +168,7 @@
                         <img class="img-fluid mb-4" src="img/icon2.png" style="width:100px; height:100px;" alt="">
                         <h4 class="mb-3">Standar dan Produk Layanan</h4>
                         <p class="mb-4" style="margin-top:25px;">Klik button di bawah untuk detail standar dan produk layanan.</p>
-                        <a class="btn btn-outline-primary px-3" href="">
+                        <a class="btn btn-outline-primary px-3" href="/standarpelayanan">
                             Learn More
                             <div class="d-inline-flex btn-sm-square bg-primary text-white rounded-circle ms-2">
                                 <i class="fa fa-arrow-right"></i>
@@ -181,7 +181,7 @@
                         <img class="img-fluid mb-4" src="img/icon3.png" style="width:100px; height:100px;" alt="">
                         <h4 class="mb-3">Format Surat Lainnya</h4>
                         <p class="mb-4" style="margin-top:50px;">Klik button di bawah untuk mengunduh format surat sesuai kebutuhan.</p>
-                        <a class="btn btn-outline-primary px-3" href="">
+                        <a class="btn btn-outline-primary px-3" href="/filesupload">
                             Learn More
                             <div class="d-inline-flex btn-sm-square bg-primary text-white rounded-circle ms-2">
                                 <i class="fa fa-arrow-right"></i>

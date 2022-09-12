@@ -10,27 +10,15 @@ class BaseController extends Controller
         return view('index');
     }
 
-    public function about() {
-        return view('about');
-    }
-
     public function causes() {
         return view('berita');
     }
 
-    public function team() {
-        return view('team');
-    }
-
-    public function testimonial() {
-        return view('testimonial');
-    }
-
-    public function donate() {
-        return view('donate');
-    }
-
     public function contact() {
         return view('contact');
+    }
+
+    public function standar() {
+        return view('standarpelayanan');
     }
 }
