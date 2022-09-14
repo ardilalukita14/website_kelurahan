@@ -134,13 +134,12 @@ class MainController extends Controller
     public function list($id)
     {
         $semua = Berita::orderBy('created_at','DESC')
-                ->where('status','aktif')
-                ->take(6)
+                ->take(3)
                 ->get();
         $news =  Berita::orderBy('created_at','DESC')
-                    ->where($id)
-                    ->where('status','aktif')
-                    ->get();
+                ->where('id_kategori',$id)
+                ->where('status','aktif')
+                ->get();
         return view('reader.list',compact('semua','news')) ;
     }
 
@@ -150,7 +149,7 @@ class MainController extends Controller
         $news = Berita::where('judul','LIKE','%'.$key.'%')->get();
         $semua = Berita::orderBy('created_at','DESC')
                 ->where('status','aktif')
-                ->take(6)
+                ->take(3)
                 ->get();
         return view('reader.list',compact('news','semua')) ;
     }

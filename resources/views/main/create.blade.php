@@ -9,8 +9,8 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Kelurahan Nambangan Kidul</title>
-    <meta name="description" content="Kelurahan Nambangan Kidul">
+    <title>Nambangan Kidul</title>
+    <meta name="description" content="Nambangan Kidul">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="apple-touch-icon" href="apple-icon.png">

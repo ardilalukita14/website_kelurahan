@@ -13,7 +13,7 @@
                         <div class="container">
                             <div class="row justify-content-center">
                                 <div class="col-lg-7 pt-5">
-                                    <h1 class="display-4 text-white mb-3 animated slideInDown" style="width: 1200px; text-align: center; margin-left: -230px;">Selamat Datang di Website Kelurahan Nambangan Kidul</h1>
+                                    <h1 class="display-4 text-white mb-3 animated slideInDown" style="width: 1200px; text-align: center; margin-left: -230px;">Selamat Datang di Website Nambangan Kidul</h1>
                                     <p class="fs-5 text-white-50 mb-5 animated slideInDown">Melalui website ini segala bentuk informasi akan tersampaikan secara mudah, cepat, dan menjangkau seluruh lapisan masyarakat</p>
                                     <a class="btn btn-primary py-2 px-3 animated slideInDown" href="">
                                         Learn More
@@ -68,13 +68,12 @@
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
                     <div class="position-relative overflow-hidden h-100" style="min-height: 400px;">
                         <img class="position-absolute w-100 h-100 pt-5 pe-5" src="img/about-1.jpg" alt="" style="object-fit: cover;">
-                        <img class="position-absolute top-0 end-0 bg-white ps-2 pb-2" src="img/about-2.jpg" alt="" style="width: 200px; height: 200px;">
                     </div>
                 </div>
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
                     <div class="h-100">
                         <div class="d-inline-block rounded-pill bg-secondary text-primary py-1 px-3 mb-3">Profile</div>
-                        <h1 class="display-6 mb-5">Sambutan Kepala Kelurahan Nambangan Kidul</h1>
+                        <h1 class="display-6 mb-5">Sambutan Kepala Nambangan Kidul</h1>
                         <div class="bg-light border-bottom border-5 border-primary rounded p-4 mb-4">
                             <p class="text-dark mb-2">Assalamualaikum Wr.Wb</p>
                             <p class="text-dark mb-2" style="text-align: justify;">Pertama - tama mari kita panjatkan puji syukur atas limpahan berkah dan karunia yang diberikan oleh Tuhan Yang Maha Esa,
@@ -85,7 +84,7 @@
                                 menjadi media bagi masyarakat untuk menyampaikan saran dan kritik. Untuk itu saya himbau kepada seluruh pengguna website ini, agar bisa memanfaatkan
                                 kemajuan teknologi ini dengan sebaik-baiknya, agar nilai - niali positif yang kita peroleh juga melimpah ruah. Terima kasih.</p>
                             <p class="text-dark mb-2" style="text-align: justify;">Wassalamualaikum Wr.Wb</p>
-                            <span class="text-primary">Jhon Doe, Founder</span>
+                            <span class="text-primary">Rahma Indah Heriastuti, SP</span>
                         </div>
                         <a class="btn btn-primary py-2 px-3 me-3" href="">
                             Learn More
@@ -112,7 +111,7 @@
         <div class="container py-5">
             <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
                 <div class="d-inline-block rounded-pill bg-secondary text-primary py-1 px-3 mb-3">Berita Terkini</div>
-                <h1 class="display-6 mb-5">Berita Harian Kelurahan Nambangan Kidul</h1>
+                <h1 class="display-6 mb-5">Berita Harian Nambangan Kidul</h1>
             </div>
             <div class="row g-4 justify-content-center">
             @foreach ($latest as $lts)
@@ -123,7 +122,7 @@
                                 <small>Latepost</small>
                             </div>
                             <h5 class="mb-3">{{substr($lts->judul,0,50)}}...</h5>
-                            <p>{{substr($lts->isi,0,80)}}...</p>
+                            <p>{!!substr($lts->isi,0,100)!!}...</p>
                         </div>
                         <div class="position-relative mt-auto">
                             <img class="img-fluid" src="{{asset('foto/'.$lts->foto)}}" style="height:250px; width:500px;" alt="">
@@ -155,7 +154,7 @@
                         <img class="img-fluid mb-4" src="img/icon1.png" style="width:100px; height:100px;" alt="">
                         <h4 class="mb-3">Jam Layanan</h4>
                         <p class="mb-4" style="margin-top:55px;">Klik button di bawah untuk melihat detail jam pelayanan.</p>
-                        <a class="btn btn-outline-primary px-3" href="">
+                        <a class="btn btn-outline-primary px-3" href="/jadwalpelayanan">
                             Learn More
                             <div class="d-inline-flex btn-sm-square bg-primary text-white rounded-circle ms-2">
                                 <i class="fa fa-arrow-right"></i>
@@ -221,85 +220,6 @@
         </div>
     </div>
     <!-- Donate End -->
-
-
-    <!-- Team Start -->
-    <div class="container-xxl py-5">
-        <div class="container">
-            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
-                <div class="d-inline-block rounded-pill bg-secondary text-primary py-1 px-3 mb-3">Team Members</div>
-                <h1 class="display-6 mb-5">Let's Meet With Our Ordinary Soldiers</h1>
-            </div>
-            <div class="row g-4">
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="team-item position-relative rounded overflow-hidden">
-                        <div class="overflow-hidden">
-                            <img class="img-fluid" src="img/team-1.jpg" alt="">
-                        </div>
-                        <div class="team-text bg-light text-center p-4">
-                            <h5>Full Name</h5>
-                            <p class="text-primary">Designation</p>
-                            <div class="team-social text-center">
-                                <a class="btn btn-square" href=""><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-square" href=""><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-square" href=""><i class="fab fa-instagram"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="team-item position-relative rounded overflow-hidden">
-                        <div class="overflow-hidden">
-                            <img class="img-fluid" src="img/team-2.jpg" alt="">
-                        </div>
-                        <div class="team-text bg-light text-center p-4">
-                            <h5>Full Name</h5>
-                            <p class="text-primary">Designation</p>
-                            <div class="team-social text-center">
-                                <a class="btn btn-square" href=""><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-square" href=""><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-square" href=""><i class="fab fa-instagram"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="team-item position-relative rounded overflow-hidden">
-                        <div class="overflow-hidden">
-                            <img class="img-fluid" src="img/team-3.jpg" alt="">
-                        </div>
-                        <div class="team-text bg-light text-center p-4">
-                            <h5>Full Name</h5>
-                            <p class="text-primary">Designation</p>
-                            <div class="team-social text-center">
-                                <a class="btn btn-square" href=""><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-square" href=""><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-square" href=""><i class="fab fa-instagram"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
-                    <div class="team-item position-relative rounded overflow-hidden">
-                        <div class="overflow-hidden">
-                            <img class="img-fluid" src="img/team-4.jpg" alt="">
-                        </div>
-                        <div class="team-text bg-light text-center p-4">
-                            <h5>Full Name</h5>
-                            <p class="text-primary">Designation</p>
-                            <div class="team-social text-center">
-                                <a class="btn btn-square" href=""><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-square" href=""><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-square" href=""><i class="fab fa-instagram"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Team End -->
-
 
     <!-- Testimonial Start -->
     <div class="container-xxl py-5">

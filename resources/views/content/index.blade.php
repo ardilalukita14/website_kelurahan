@@ -76,16 +76,16 @@
                                 <thead>    
                             <!-- <tr class="table-info"> -->
                                 <th>JUDUL PELAYANAN</th>
-                                <th>DESKRIPSI PELAYANAN</th>
+                                <th width="1000px">DESKRIPSI PELAYANAN</th>
                                 <th>JENIS PELAYANAN</th>
-                                <th width="250px">AKSI</th>
+                                <th width="220px">AKSI</th>
                         <!-- </tr> -->
                         </thead>
                         <tbody>
                              @foreach($data as $d)
                         <tr>
                             <td>{{$d->judul}}</td>
-                            <td>{!!$d->isi!!}</td>
+                            <td  style=" padding: 30px;">{!!$d->isi!!}</td>
                             <td>{{$d->layanan->nama}}</td>
                             <td>
                                 <a href="{{route('content.show',$d->id)}}" class="btn btn-info btn-sm">DETAIL</a>

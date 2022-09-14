@@ -13,7 +13,7 @@
                         <div class="container">
                             <div class="row justify-content-center">
                                 <div class="col-lg-7 pt-5">
-                                    <h1 class="display-4 text-white mb-3 animated slideInDown" style="width: 1200px; text-align: center; margin-left: -230px;">Selamat Datang di Website Kelurahan Nambangan Kidul</h1>
+                                    <h1 class="display-4 text-white mb-3 animated slideInDown" style="width: 1200px; text-align: center; margin-left: -230px;">Selamat Datang di Website Nambangan Kidul</h1>
                                     <p class="fs-5 text-white-50 mb-5 animated slideInDown">Melalui website ini segala bentuk informasi akan tersampaikan secara mudah, cepat, dan menjangkau seluruh lapisan masyarakat</p>
                                     <a class="btn btn-primary py-2 px-3 animated slideInDown" href="">
                                         Learn More
@@ -66,7 +66,7 @@
         <div class="container">
             <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
                 <div class="d-inline-block rounded-pill bg-secondary text-primary py-1 px-3 mb-3">Sekilas info</div>
-                <h1 class="display-6 mb-5">Berita Kamtibmas Kelurahan Nambangan Kidul</h1>
+                <h1 class="display-6 mb-5">Berita Kamtibmas Nambangan Kidul</h1>
             </div>
             <div class="row g-4 justify-content-center">
             @foreach ($kamtibmas as $kts)

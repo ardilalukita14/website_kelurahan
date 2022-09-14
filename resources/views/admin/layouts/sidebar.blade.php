@@ -67,7 +67,7 @@
                         <a href="/maklumat"> <i class="menu-icon fa fa-bell "></i>Maklumat Pelayanan </a>
                     </li>
                     <li>
-                        <a href="/time"> <i class="menu-icon fa fa-bell "></i>Jadwal Pelayanan </a>
+                        <a href="/time"> <i class="menu-icon fa fa-clock-o "></i>Jadwal Pelayanan </a>
                     </li>
                     <li>
                         <a href="/tupoksi"> <i class="menu-icon fa fa-briefcase"></i>Tugas Pokok & Fungsi</a>
@@ -80,6 +80,13 @@
                         <ul class="sub-menu children dropdown-menu">
                             <li><i class="menu-icon fa fa-th"></i><a href="{{route('layanan.do_layanan')}}">Tambah Data</a></li>
                             <li><i class="menu-icon fa fa-th"></i><a href="{{ route('layanan.index')}}">Show Data</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item-has-children dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-handshake-o"></i>Detail Pelayanan</a>
+                        <ul class="sub-menu children dropdown-menu">
+                            <li><i class="menu-icon fa fa-th"></i><a href="{{route('content.do_content')}}">Tambah Data</a></li>
+                            <li><i class="menu-icon fa fa-th"></i><a href="{{ route('content.index')}}">Show Data</a></li>
                         </ul>
                     </li>
 

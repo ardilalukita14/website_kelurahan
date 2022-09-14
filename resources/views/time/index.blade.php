@@ -9,8 +9,8 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Kelurahan Nambangan Kidul</title>
-    <meta name="description" content="Kelurahan Nambangan Kidul">
+    <title>Nambangan Kidul</title>
+    <meta name="description" content="Nambangan Kidul">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="apple-touch-icon" href="apple-icon.png">
@@ -76,7 +76,6 @@
                                     <thead>
                                         <tr>
                                         <th>Judul</th>
-                                        <th width="550px">Isi</th>
                                         <th>Foto</th>
                                         <th width="200px">Action</th>    
                                         </tr>
@@ -85,7 +84,6 @@
                                     @foreach ($time as $data)
                                     <tr>
                                         <td>{{$data->judul}}</td>
-                                        <td>{!! $data->isi !!}</td>
                                         <td>{{$data->foto}}</td>
                                         <td>
                                                 

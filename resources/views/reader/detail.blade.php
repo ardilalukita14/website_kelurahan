@@ -14,7 +14,7 @@
                         <div class="container">
                             <div class="row justify-content-center">
                                 <div class="col-lg-7 pt-5">
-                                    <h1 class="display-4 text-white mb-3 animated slideInDown" style="width: 1200px; text-align: center; margin-left: -230px;">Selamat Datang di Website Kelurahan Nambangan Kidul</h1>
+                                    <h1 class="display-4 text-white mb-3 animated slideInDown" style="width: 1200px; text-align: center; margin-left: -230px;">Selamat Datang di Website Nambangan Kidul</h1>
                                     <p class="fs-5 text-white-50 mb-5 animated slideInDown">Melalui website ini segala bentuk informasi akan tersampaikan secara mudah, cepat, dan menjangkau seluruh lapisan masyarakat</p>
                                     <a class="btn btn-primary py-2 px-3 animated slideInDown" href="">
                                         Learn More
@@ -65,13 +65,13 @@
 <hr>
 <div class="col-md-12" style="margin-left:30px">
 <h1><b>{{$news->judul}}</b></h1>
-<p>Penulis : <b>{{$news->author}}</b>, {{$news->tanggal}}</p> <hr>
+<p>Penulis : <b>{{$news->author}}</b>, <i class="fa fa-calendar "></i> {{$news->tanggal}}</p> <hr>
 </div>
 
 <div class="row">
 	<div class="col-md-7" style="margin-left:30px">
 		<p align="center"><img style="width: 600px;height: 300px;" src="{{asset('foto/'.$news->foto)}}"></p>
-        <div class="mb-10;"><p align="justify" style="margin-top: 40px;">{!!$news->isi!!}</p></div>
+        <div class="mb-10;"><p style="margin-top: 40px; align: justify">{!!$news->isi!!}</p></div>
 		<hr><br>
 		@if(Session::has('success'))
 		<div class="alert alert-info">
@@ -110,20 +110,22 @@
 		</form>
 	</div>
 	<div class="col-md-4">
-		<div class="btn btn-success"><b>BERITA TERBARU</b></div>
+		<!-- new news -->
+        <br></br>
+		<b class="label label-info"><h3 style="margin-left:10px;"><b>TOP NEWS</b></b></h3>
 		<hr>
-		<div class="row">
+		<div class="row" style="margin-left: 50px">
 			@foreach($semua as $tp)
 			<a href="{{route('reader.show_news',$tp->id)}}">
 				<div class="col-md-8">
 					<div class="panel panel-default">
 					  <div class="panel-body">
-					  	<img style="width: 200px;height: 100px" class="img-rounded img-responsive" src="{{asset('foto/'.$tp->foto)}}"><br>
-					  	<p><h5 style="width: 220px; font-size: 12px;">{!!substr($tp->judul,0,50)!!}...</h5></p>
+					  	<img style="width: 400px;height: 200px" class="img-rounded img-responsive" src="{{asset('foto/'.$tp->foto)}}"><br>
+					  	<p><h5 style="width: 400px; font-size: 14px; font-color:#072366;  text-align: justify;">{!!$tp->judul!!}</h5></p>
 					  </div>
 					</div>
-				</div>
-			</a>
+				</div>	
+            </a>
 			@endforeach
 		</div>
 	</div>

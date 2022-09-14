@@ -9,8 +9,8 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Kelurahan Nambangan Kidul</title>
-    <meta name="description" content="Kelurahan Nambangan Kidul">
+    <title>Nambangan Kidul</title>
+    <meta name="description" content="Nambangan Kidul">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="apple-touch-icon" href="apple-icon.png">
@@ -231,7 +231,7 @@
             <div class="col-xl-6">
                 <div class="card">
                     <div class="card-header">
-                        <h4>Kelurahan Nambangan Kidul</h4>
+                        <h4>Nambangan Kidul</h4>
                     </div>
                     <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s" style="min-height: 450px;">
                     <div class="position-relative rounded overflow-hidden h-100">

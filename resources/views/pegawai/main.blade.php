@@ -13,7 +13,7 @@
                         <div class="container">
                             <div class="row justify-content-center">
                                 <div class="col-lg-7 pt-5">
-                                    <h1 class="display-4 text-white mb-3 animated slideInDown" style="width: 1200px; text-align: center; margin-left: -230px;">Selamat Datang di Website Kelurahan Nambangan Kidul</h1>
+                                    <h1 class="display-4 text-white mb-3 animated slideInDown" style="width: 1200px; text-align: center; margin-left: -230px;">Selamat Datang di Website Nambangan Kidul</h1>
                                     <p class="fs-5 text-white-50 mb-5 animated slideInDown">Melalui website ini segala bentuk informasi akan tersampaikan secara mudah, cepat, dan menjangkau seluruh lapisan masyarakat</p>
                                     <a class="btn btn-primary py-2 px-3 animated slideInDown" href="">
                                         Learn More
@@ -65,7 +65,7 @@
         <div class="container">
             <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
                 <div class="d-inline-block rounded-pill bg-secondary text-primary py-1 px-3 mb-3">Informasi Pegawai</div>
-                <h1 class="display-6 mb-5" style="text-align: center; width: 1000px; margin-left: -250px;">DAFTAR NAMA PEJABAT KELURAHAN NAMBANGAN KIDUL KECAMATAN MANGUHARJO KOTA MADIUN TAHUN 2022</h1>
+                <h1 class="display-6 mb-5" style="text-align: center; width: 1000px; margin-left: -250px;">DAFTAR NAMA PEJABAT Nambangan Kidul KECAMATAN MANGUHARJO KOTA MADIUN TAHUN 2022</h1>
             </div>
             <div class="position-relative mt-auto">
             <table id="bootstrap-all-table-export" class="table table-striped table-bordered">

@@ -42,6 +42,7 @@ Route::get('/kamtibmas', [App\Http\Controllers\BeritaMainController::class, 'kam
 Route::get('/kesehatan', [App\Http\Controllers\BeritaMainController::class, 'kesehatan'])->name('kesehatan.show');
 Route::get('/pendidikan', [App\Http\Controllers\BeritaMainController::class, 'pendidikan'])->name('pendidikan.show');
 Route::get('/ekonomi', [App\Http\Controllers\BeritaMainController::class, 'ekonomi'])->name('ekonomi.show');
+Route::get('/pernak', [App\Http\Controllers\BeritaMainController::class, 'pernak'])->name('pernak.show');
 Route::get('/pariwisata', [App\Http\Controllers\BeritaMainController::class, 'pariwisata'])->name('pariwisata.show');
 Route::get('/karangtaruna', [App\Http\Controllers\BeritaMainController::class, 'karta'])->name('karta.show');
 Route::get('/pkk', [App\Http\Controllers\BeritaMainController::class, 'pkk'])->name('pkk.show');
@@ -58,6 +59,13 @@ Route::get('/ahliwaris', [App\Http\Controllers\BeritaMainController::class, 'kaw
 Route::get('/dokumenkematian', [App\Http\Controllers\BeritaMainController::class, 'dokem'])->name('dokem.show');
 Route::get('/sktm', [App\Http\Controllers\BeritaMainController::class, 'ktm'])->name('ktm.show');
 Route::get('/skck', [App\Http\Controllers\BeritaMainController::class, 'skck'])->name('skck.show');
+
+
+// Route::get('/show','App\Http\Controllers\MainController@search')->name('search');
+Route::post('/detail/cariberita','App\Http\Controllers\MainController@cari')->name('reader.cr_berita');
+Route::get('/detail/{id}','App\Http\Controllers\MainController@show')->name('reader.show_news');
+Route::post('/detail/{id}','App\Http\Controllers\MainController@update')->name('reader.komentar');
+Route::get('/detail/list/{id}','App\Http\Controllers\MainController@list')->name('reader.list');
 
 Route::group(['middleware'=>['admin','auth','PreventBackHistory']], function(){
 Route::get('/admin', [App\Http\Controllers\AdminController::class, 'admin'])->name('admin');
@@ -141,12 +149,6 @@ Route::get('/detailtupoksi/edit/{id}','App\Http\Controllers\TupoksiController@ed
 Route::post('/detailtupoksi/edit/{id}','App\Http\Controllers\TupoksiController@update')->name('tupoksi.edit');
 Route::get('/detailtupoksi/{id}','App\Http\Controllers\TupoksiController@show')->name('tupoksi.show');
 Route::get('/detailtupoksi/delete/{id}','App\Http\Controllers\TupoksiController@destroy')->name('tupoksi.destroy');
-
-// Route::get('/show','App\Http\Controllers\MainController@search')->name('search');
-Route::post('/detail/cariberita','App\Http\Controllers\MainController@cari')->name('reader.cr_berita');
-Route::get('/detail/{id}','App\Http\Controllers\MainController@show')->name('reader.show_news');
-Route::post('/detail/{id}','App\Http\Controllers\MainController@update')->name('reader.komentar');
-Route::get('/detail/list/{id}','App\Http\Controllers\MainController@list')->name('reader.list');
 
 Route::get('/kategori','App\Http\Controllers\KategoriController@index')->name('kategori.index');
 Route::get('/category/create','App\Http\Controllers\KategoriController@create')->name('kategori.do_ketagori');

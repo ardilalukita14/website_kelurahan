@@ -42,6 +42,7 @@
                         <div class="dropdown-menu m-0">
                             <a href="/kesehatan" class="dropdown-item">Bidang Kesehatan</a>
                             <a href="/pendidikan" class="dropdown-item">Bidang Pendidikan</a>
+                            <a href="/pernak" class="dropdown-item">Bidang Perempuan dan Anak</a>
                             <a href="/ekonomi" class="dropdown-item">Bidang Ekonomi</a>
                             <a href="/pariwisata" class="dropdown-item">Bidang Pariwisata</a>
                             <a href="/kamtibmas" class="dropdown-item">Bidang Kamtibmas</a>
