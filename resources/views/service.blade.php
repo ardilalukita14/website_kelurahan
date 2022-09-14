@@ -10,6 +10,9 @@
 
     <!-- Favicon -->
     <link href="img/favicon.ico" rel="icon">
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+    <link rel="shortcut icon" type="image/x-icon" href="img/logomadiun.png">
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -123,7 +126,7 @@
                         <h4 class="mb-3">Child Education</h4>
                         <p class="mb-4">Tempor ut dolore lorem kasd vero ipsum sit eirmod sit. Ipsum diam justo sed vero dolor duo.</p>
                         <a class="btn btn-outline-primary px-3" href="">
-                            Learn More
+                        Read More
                             <div class="d-inline-flex btn-sm-square bg-primary text-white rounded-circle ms-2">
                                 <i class="fa fa-arrow-right"></i>
                             </div>
@@ -136,7 +139,7 @@
                         <h4 class="mb-3">Medical Treatment</h4>
                         <p class="mb-4">Tempor ut dolore lorem kasd vero ipsum sit eirmod sit. Ipsum diam justo sed vero dolor duo.</p>
                         <a class="btn btn-outline-primary px-3" href="">
-                            Learn More
+                        Read More
                             <div class="d-inline-flex btn-sm-square bg-primary text-white rounded-circle ms-2">
                                 <i class="fa fa-arrow-right"></i>
                             </div>
@@ -149,7 +152,7 @@
                         <h4 class="mb-3">Pure Drinking Water</h4>
                         <p class="mb-4">Tempor ut dolore lorem kasd vero ipsum sit eirmod sit. Ipsum diam justo sed vero dolor duo.</p>
                         <a class="btn btn-outline-primary px-3" href="">
-                            Learn More
+                        Read More
                             <div class="d-inline-flex btn-sm-square bg-primary text-white rounded-circle ms-2">
                                 <i class="fa fa-arrow-right"></i>
                             </div>

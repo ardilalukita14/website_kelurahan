@@ -12,12 +12,12 @@
     <title>Nambangan Kidul</title>
     <meta name="description" content="Nambangan Kidul">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
     <link rel="apple-touch-icon" href="apple-icon.png">
     <link rel="shortcut icon" href="favicon.ico">
-
-
-    <link rel="stylesheet" href="vendors/bootstrap/dist/css/bootstrap.min.css">
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+    <link rel="shortcut icon" type="image/x-icon" href="img/logomadiun.png">
+    
     <link rel="stylesheet" href="vendors/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="vendors/themify-icons/css/themify-icons.css">
     <link rel="stylesheet" href="vendors/flag-icon-css/css/flag-icon.min.css">
@@ -25,10 +25,7 @@
     <link rel="stylesheet" href="vendors/datatables.net-bs4/css/dataTables.bootstrap4.min.css">
     <link rel="stylesheet" href="vendors/datatables.net-buttons-bs4/css/buttons.bootstrap4.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
-
-
     <link rel="stylesheet" href="assets/css/style.css">
-
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800' rel='stylesheet' type='text/css'>
 </head>
 
@@ -40,7 +37,8 @@
 @extends('admin.layouts.contents')
 @section('content')
 
-        <div class="breadcrumbs">
+       
+<div class="breadcrumbs">
             <div class="col-sm-4">
                 <div class="page-header float-left">
                     <div class="page-title">
@@ -61,17 +59,18 @@
             </div>
         </div>
 
-        @section('content')
-            <section class="section">
-            <div class="container mt-5">
-            <form action="{{route('pengumuman.create')}}" method="post" class="needs-validation" novalidate="novalidate">
-                @csrf
+
+    <div class="container">
+        <div class="row" style="width: 1500px; margin-left:-200px;">
+            <div class="col-md-8 offset-2 mt-5">
                 <div class="card">
-                  <div class="card-header">
-                    <h4>Pengumuman</h4>
-                  </div>
-                  <div class="card-body">
-                    <div class="form-group">
+                    <div class="card-header bg-info">
+                        <h6 class="text-white">TAMBAH DATA PENGUMUMAN</h6>
+                    </div>
+                    <div class="card-body">
+                        <form method="post" action="" enctype="multipart/form-data">
+                            @csrf
+                           <div class="form-group">
                       <label>Judul</label>
                       <input type="text" id="judul" name="judul" class="form-control" required>
                       <div class="invalid-feedback">
@@ -91,11 +90,16 @@
                     </select>
                   </div>
                   </div>
-                  <div class="card-footer">
-                    <button class="btn btn-primary">Simpan</button>
-                  </div>
+
+                            <div class="form-group text-center">
+                                <button type="submit" class="btn btn-success btn-sm">Save</button>
+                            </div>
+                        </form>
+                    </div>
                 </div>
-              </form>
+            </div>
+        </div>
+    </div>
                 </div>
             </div><!-- .animated -->
         </div><!-- .content -->
@@ -109,7 +113,7 @@
     <script src="vendors/jquery/dist/jquery.min.js"></script>
     <script src="vendors/popper.js/dist/umd/popper.min.js"></script>
     <script src="vendors/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="assets/js/admin.js"></script>
+    <script src="assets/js/main.js"></script>
 
 
     <script src="vendors/datatables.net/js/jquery.dataTables.min.js"></script>
@@ -123,6 +127,7 @@
     <script src="vendors/datatables.net-buttons/js/buttons.print.min.js"></script>
     <script src="vendors/datatables.net-buttons/js/buttons.colVis.min.js"></script>
     <script src="assets/js/init-scripts/data-table/datatables-init.js"></script>
+
     <script src="//cdn.ckeditor.com/4.19.1/standard/ckeditor.js"></script>
 
     <script type="text/javascript">
@@ -130,7 +135,6 @@
         $('.ckeditor').ckeditor();
     });
     </script>
-
 </body>
 
 </html>

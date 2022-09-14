@@ -15,6 +15,9 @@
 
     <link rel="apple-touch-icon" href="apple-icon.png">
     <link rel="shortcut icon" href="favicon.ico">
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+    <link rel="shortcut icon" type="image/x-icon" href="img/logomadiun.png">
 
 
     <link rel="stylesheet" href="vendors/bootstrap/dist/css/bootstrap.min.css">
@@ -94,4 +97,34 @@
                             <input type="submit" value="KIRIM" class="btn btn-info" style="margin-left: 50px;">
                             <br></br>
                         </form>
-@endsection
+            @endsection
+
+    <script src="vendors/jquery/dist/jquery.min.js"></script>
+    <script src="vendors/popper.js/dist/umd/popper.min.js"></script>
+    <script src="vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="assets/js/main.js"></script>
+
+
+    <script src="vendors/datatables.net/js/jquery.dataTables.min.js"></script>
+    <script src="vendors/datatables.net-bs4/js/dataTables.bootstrap4.min.js"></script>
+    <script src="vendors/datatables.net-buttons/js/dataTables.buttons.min.js"></script>
+    <script src="vendors/datatables.net-buttons-bs4/js/buttons.bootstrap4.min.js"></script>
+    <script src="vendors/jszip/dist/jszip.min.js"></script>
+    <script src="vendors/pdfmake/build/pdfmake.min.js"></script>
+    <script src="vendors/pdfmake/build/vfs_fonts.js"></script>
+    <script src="vendors/datatables.net-buttons/js/buttons.html5.min.js"></script>
+    <script src="vendors/datatables.net-buttons/js/buttons.print.min.js"></script>
+    <script src="vendors/datatables.net-buttons/js/buttons.colVis.min.js"></script>
+    <script src="assets/js/init-scripts/data-table/datatables-init.js"></script>
+
+    <script src="//cdn.ckeditor.com/4.19.1/standard/ckeditor.js"></script>
+
+    <script type="text/javascript">
+    $(document).ready(function () {
+        $('.ckeditor').ckeditor();
+    });
+</script>
+
+</body>
+
+</html>

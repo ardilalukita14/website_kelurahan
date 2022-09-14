@@ -15,6 +15,9 @@
 
     <link rel="apple-touch-icon" href="apple-icon.png">
     <link rel="shortcut icon" href="favicon.ico">
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+    <link rel="shortcut icon" type="image/x-icon" href="img/logomadiun.png">
 
 
     <link rel="stylesheet" href="vendors/bootstrap/dist/css/bootstrap.min.css">
@@ -39,7 +42,7 @@
             <div class="login-content">
                 <div class="login-logo">
                     <a href="/">
-                        <img class="align-content" src="images/logo.png" alt="">
+                        <img class="align-content" src="img/logokelurahan3.png" alt="">
                     </a>
                     <br><br>
                 </div>
@@ -70,7 +73,7 @@
                                     {{ __('Remember Me') }}
                             </label>
                                     <label class="pull-right">
-                                <a href="#">Forgotten Password?</a>
+                                <!-- <a href="#">Forgotten Password?</a> -->
                             </label>
 
                                 </div>
@@ -83,9 +86,9 @@
                                     </div>
                                 </div> -->
                                 <br><br>
-                                <div class="register-link m-t-15 text-center">
+                                <!-- <div class="register-link m-t-15 text-center">
                                     <p>Don't have account ? <a href="#"> Sign Up Here</a></p>
-                                </div>
+                                </div> -->
                     </form>
                 </div>
             </div>

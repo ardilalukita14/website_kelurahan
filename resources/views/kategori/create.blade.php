@@ -14,7 +14,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="apple-touch-icon" href="apple-icon.png">
     <link rel="shortcut icon" href="favicon.ico">
-
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+    <link rel="shortcut icon" type="image/x-icon" href="img/logomadiun.png">
     
     <link rel="stylesheet" href="vendors/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="vendors/themify-icons/css/themify-icons.css">
@@ -23,7 +25,6 @@
     <link rel="stylesheet" href="vendors/datatables.net-bs4/css/dataTables.bootstrap4.min.css">
     <link rel="stylesheet" href="vendors/datatables.net-buttons-bs4/css/buttons.bootstrap4.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
-
     <link rel="stylesheet" href="assets/css/style.css">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800' rel='stylesheet' type='text/css'>
 </head>
@@ -99,7 +100,7 @@
 
     <script src="vendors/jquery/dist/jquery.min.js"></script>
     <script src="vendors/popper.js/dist/umd/popper.min.js"></script>
-    <!-- <script src="vendors/bootstrap/dist/js/bootstrap.min.js"></script> -->
+    <script src="vendors/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="assets/js/main.js"></script>
 
 

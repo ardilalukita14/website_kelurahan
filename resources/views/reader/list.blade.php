@@ -17,7 +17,7 @@
                                     <h1 class="display-4 text-white mb-3 animated slideInDown" style="width: 1200px; text-align: center; margin-left: -230px;">Selamat Datang di Website Nambangan Kidul</h1>
                                     <p class="fs-5 text-white-50 mb-5 animated slideInDown">Melalui website ini segala bentuk informasi akan tersampaikan secara mudah, cepat, dan menjangkau seluruh lapisan masyarakat</p>
                                     <a class="btn btn-primary py-2 px-3 animated slideInDown" href="">
-                                        Learn More
+                                    Read More
                                         <div class="d-inline-flex btn-sm-square bg-white text-primary rounded-circle ms-2">
                                             <i class="fa fa-arrow-right"></i>
                                         </div>
@@ -36,7 +36,7 @@
                                     <h1 class="display-4 text-white mb-3 animated slideInDown">Teknologi Mempermudah Kita</h1>
                                     <p class="fs-5 text-white-50 mb-5 animated slideInDown">Website ini menjadi media informasi bagi pemerintah kelurahan dan juga masyarakat Nambangan Kidul</p>
                                     <a class="btn btn-primary py-2 px-3 animated slideInDown" href="">
-                                        Learn More
+                                    Read More
                                         <div class="d-inline-flex btn-sm-square bg-white text-primary rounded-circle ms-2">
                                             <i class="fa fa-arrow-right"></i>
                                         </div>

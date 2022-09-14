@@ -49,7 +49,7 @@ class PengumumanController extends Controller
             'tanggal' => date('Y-m-d')
         ]);
 
-        return redirect('/admin');
+        return redirect('/pengumuman');
     }
 
     /**

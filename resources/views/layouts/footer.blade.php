@@ -17,14 +17,14 @@
                     <h5 class="text-light mb-4">Alamat</h5>
                     <p><i class="fa fa-map-marker-alt me-3"></i>Jl. Merpati No.75, Nambangan Lor, Kec. Manguharjo, Kota Madiun, Jawa Timur 63129</p>
                     <p><i class="fa fa-phone-alt me-3"></i>(0351) 493137</p>
-                    <p><i class="fa fa-envelope me-3"></i>info@example.com</p>
+                    <p><i class="fa fa-envelope me-3"></i>kelnambangankidul@gmail.com</p>
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <h5 class="text-light mb-4">Menu</h5>
-                    <a class="btn btn-link" href="">Beranda</a>
-                    <a class="btn btn-link" href="">Profile Kelurahan</a>
-                    <a class="btn btn-link" href="">Contact Kelurahan</a>
-                    <a class="btn btn-link" href="">Berita Terkini</a>
+                    <a class="btn btn-link" href="/">Beranda</a>
+                    <a class="btn btn-link" href="/histories">Profile Kelurahan</a>
+                    <a class="btn btn-link" href="/contact">Contact Kelurahan</a>
+                    <a class="btn btn-link" href="/beritaterkini">Berita Terkini</a>
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <h5 class="text-light mb-4">Berita Terkini</h5>

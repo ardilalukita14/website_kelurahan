@@ -21,7 +21,7 @@ class PegawaiController extends Controller
     }
 
     public function pegawai() {
-        $semua = pegawai::orderBy('created_at','DESC')
+        $semua = pegawai::orderBy('created_at','ASC')
                 ->get();
         return view('pegawai.main', compact('semua'));
     }

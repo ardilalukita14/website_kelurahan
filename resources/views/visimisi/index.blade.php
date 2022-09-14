@@ -15,7 +15,9 @@
 
     <link rel="apple-touch-icon" href="apple-icon.png">
     <link rel="shortcut icon" href="favicon.ico">
-
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+    <link rel="shortcut icon" type="image/x-icon" href="img/logomadiun.png">
 
     <link rel="stylesheet" href="vendors/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="vendors/font-awesome/css/font-awesome.min.css">
@@ -65,7 +67,7 @@
 
                     <div class="col-md-12">
                         <div class="card">
-                            <div class="card-header">
+                            <div class="card-header bg-info">
                                 <strong class="card-title">Data Table</strong>
                             </div>
                             <div class="col-md-8">
@@ -78,7 +80,7 @@
                                         <th width="150px">Judul</th>
                                         <th width="600px">Visi</th>
                                         <th width="600px">Misi</th>
-                                        <th width="300px">Action</th>    
+                                        <th width="350px">Action</th>    
                                         </tr>
                                     </thead>
                                     <tbody>

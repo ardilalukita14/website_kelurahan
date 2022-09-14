@@ -15,7 +15,10 @@
 
     <link rel="apple-touch-icon" href="apple-icon.png">
     <link rel="shortcut icon" href="favicon.ico">
-
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+    <link rel="shortcut icon" type="image/x-icon" href="img/logomadiun.png">
+    
     <link rel="stylesheet" href="vendors/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="vendors/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="vendors/themify-icons/css/themify-icons.css">
@@ -62,7 +65,7 @@
             <div class="container mt-5">
                 <div class="row justify-content-center align-items-center">
                     <div class="card" style="width: 50rem; margin-left: 80px;">
-                        <div class="card-header">
+                        <div class="card-header bg-info">
                             <h5 style="font-size: 18px; font-family: Arial, Helvetica"><b>Detail Data Tupoksi</h5></b>
                         </div>
                         <div class="card-body">

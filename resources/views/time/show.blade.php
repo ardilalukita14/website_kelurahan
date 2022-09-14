@@ -62,7 +62,7 @@
             <div class="container mt-5">
                 <div class="row justify-content-center align-items-center">
                     <div class="card" style="width: 50rem; margin-left: 80px;">
-                        <div class="card-header">
+                        <div class="card-header bg-info">
                             <h5 style="font-size: 18px; font-family: Arial, Helvetica"><b>Detail Data Jam Pelayanan</h5></b>
                         </div>
                         <div class="card-body">

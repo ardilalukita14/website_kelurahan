@@ -108,7 +108,7 @@
     <script src="vendors/jquery/dist/jquery.min.js"></script>
     <script src="vendors/popper.js/dist/umd/popper.min.js"></script>
     <script src="vendors/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="assets/js/komentar.js"></script>
+    <script src="assets/js/main.js"></script>
 
 
     <script src="vendors/datatables.net/js/jquery.dataTables.min.js"></script>
@@ -123,7 +123,13 @@
     <script src="vendors/datatables.net-buttons/js/buttons.colVis.min.js"></script>
     <script src="assets/js/init-scripts/data-table/datatables-init.js"></script>
 
+    <script src="//cdn.ckeditor.com/4.19.1/standard/ckeditor.js"></script>
 
+    <script type="text/javascript">
+    $(document).ready(function () {
+        $('.ckeditor').ckeditor();
+    });
+    </script>
 </body>
 
 </html>

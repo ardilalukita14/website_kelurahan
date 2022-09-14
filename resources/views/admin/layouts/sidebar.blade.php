@@ -8,7 +8,7 @@
                     <i class="fa fa-bars"></i>
                 </button>
                 <a class="navbar-brand" href="./"><img src="img/logokelurahan3.png" alt="Logo"></a>
-                <a class="navbar-brand hidden" href="./"><img src="images/logo2.png" alt="Logo"></a>
+                <!-- <a class="navbar-brand hidden" href="./"><img src="images/logo3.png" alt="Logo"></a> -->
             </div>
 
             <div id="main-menu" class="main-menu collapse navbar-collapse">
@@ -83,7 +83,7 @@
                         </ul>
                     </li>
                     <li class="menu-item-has-children dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-handshake-o"></i>Detail Pelayanan</a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-asterisk"></i>Detail Pelayanan</a>
                         <ul class="sub-menu children dropdown-menu">
                             <li><i class="menu-icon fa fa-th"></i><a href="{{route('content.do_content')}}">Tambah Data</a></li>
                             <li><i class="menu-icon fa fa-th"></i><a href="{{ route('content.index')}}">Show Data</a></li>

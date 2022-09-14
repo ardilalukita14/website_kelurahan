@@ -16,7 +16,7 @@
                                     <h1 class="display-4 text-white mb-3 animated slideInDown" style="width: 1200px; text-align: center; margin-left: -230px;">Selamat Datang di Website Nambangan Kidul</h1>
                                     <p class="fs-5 text-white-50 mb-5 animated slideInDown">Melalui website ini segala bentuk informasi akan tersampaikan secara mudah, cepat, dan menjangkau seluruh lapisan masyarakat</p>
                                     <a class="btn btn-primary py-2 px-3 animated slideInDown" href="">
-                                        Learn More
+                                       Read More
                                         <div class="d-inline-flex btn-sm-square bg-white text-primary rounded-circle ms-2">
                                             <i class="fa fa-arrow-right"></i>
                                         </div>
@@ -35,7 +35,7 @@
                                     <h1 class="display-4 text-white mb-3 animated slideInDown">Teknologi Mempermudah Kita</h1>
                                     <p class="fs-5 text-white-50 mb-5 animated slideInDown">Website ini menjadi media informasi bagi pemerintah kelurahan dan juga masyarakat Nambangan Kidul</p>
                                     <a class="btn btn-primary py-2 px-3 animated slideInDown" href="">
-                                        Learn More
+                                       Read More
                                         <div class="d-inline-flex btn-sm-square bg-white text-primary rounded-circle ms-2">
                                             <i class="fa fa-arrow-right"></i>
                                         </div>
@@ -87,7 +87,7 @@
                             <span class="text-primary">Rahma Indah Heriastuti, SP</span>
                         </div>
                         <a class="btn btn-primary py-2 px-3 me-3" href="">
-                            Learn More
+                           Read More
                             <div class="d-inline-flex btn-sm-square bg-white text-primary rounded-circle ms-2">
                                 <i class="fa fa-arrow-right"></i>
                             </div>
@@ -155,7 +155,7 @@
                         <h4 class="mb-3">Jam Layanan</h4>
                         <p class="mb-4" style="margin-top:55px;">Klik button di bawah untuk melihat detail jam pelayanan.</p>
                         <a class="btn btn-outline-primary px-3" href="/jadwalpelayanan">
-                            Learn More
+                           Read More
                             <div class="d-inline-flex btn-sm-square bg-primary text-white rounded-circle ms-2">
                                 <i class="fa fa-arrow-right"></i>
                             </div>
@@ -168,7 +168,7 @@
                         <h4 class="mb-3">Standar dan Produk Layanan</h4>
                         <p class="mb-4" style="margin-top:25px;">Klik button di bawah untuk detail standar dan produk layanan.</p>
                         <a class="btn btn-outline-primary px-3" href="/standarpelayanan">
-                            Learn More
+                           Read More
                             <div class="d-inline-flex btn-sm-square bg-primary text-white rounded-circle ms-2">
                                 <i class="fa fa-arrow-right"></i>
                             </div>
@@ -181,7 +181,7 @@
                         <h4 class="mb-3">Format Surat Lainnya</h4>
                         <p class="mb-4" style="margin-top:50px;">Klik button di bawah untuk mengunduh format surat sesuai kebutuhan.</p>
                         <a class="btn btn-outline-primary px-3" href="/filesupload">
-                            Learn More
+                           Read More
                             <div class="d-inline-flex btn-sm-square bg-primary text-white rounded-circle ms-2">
                                 <i class="fa fa-arrow-right"></i>
                             </div>
@@ -201,7 +201,7 @@
                 <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
                     <div class="d-inline-block rounded-pill bg-secondary text-primary py-1 px-3 mb-3">Contact</div>
                     <h1 class="display-6 text-white mb-5">Terima kasih telah mengunjungi website ini</h1>
-                    <p class="text-white-50 mb-0">Untuk informasi lebih Anda dapat menghubungi kami atau jika ada kritik dan saran silakan mengunjungi halaman <b>contact</b>.</p>
+                    <p class="text-white-50 mb-0">Untuk informasi lebih, Anda dapat menghubungi kami atau jika ada kritik dan saran silakan mengunjungi halaman <b>contact</b>.</p>
                 </div>
                 <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
                     <div class="h-100 bg-white p-5">

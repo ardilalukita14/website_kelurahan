@@ -65,7 +65,7 @@
 
                     <div class="col-md-12">
                         <div class="card">
-                            <div class="card-header">
+                            <div class="card-header bg-info">
                                 <strong class="card-title">Data Table</strong>
                             </div>
                             <div class="col-md-8">
@@ -78,7 +78,7 @@
                                 <th>JUDUL PELAYANAN</th>
                                 <th width="1000px">DESKRIPSI PELAYANAN</th>
                                 <th>JENIS PELAYANAN</th>
-                                <th width="220px">AKSI</th>
+                                <th width="300px">AKSI</th>
                         <!-- </tr> -->
                         </thead>
                         <tbody>

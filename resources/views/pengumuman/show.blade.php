@@ -15,7 +15,10 @@
 
     <link rel="apple-touch-icon" href="apple-icon.png">
     <link rel="shortcut icon" href="favicon.ico">
-
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+    <link rel="shortcut icon" type="image/x-icon" href="img/logomadiun.png">
+    
     <link rel="stylesheet" href="vendors/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="vendors/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="vendors/themify-icons/css/themify-icons.css">
@@ -71,7 +74,7 @@
                                 <li class="list-group-item" style="font-size: 16px;"><b>Isi: </b>{!!$pengumuman->isi!!}</li>
                             </ul>
                         </div>
-                        <a class="btn btn-success mt-3" href="{{ route('pengumuman.index') }}" style="font-size: 16px; margin-left:10px; margin-bottom: 30px;">Kembali</a>
+                        <a class="btn btn-success mt-3" href="{{ route('pengumuman.index') }}" style="font-size: 16px; margin-bottom: 30px;">Kembali</a>
                     </div>
                 </div>
             </div>

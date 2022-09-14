@@ -15,6 +15,9 @@
 
     <link rel="apple-touch-icon" href="apple-icon.png">
     <link rel="shortcut icon" href="favicon.ico">
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+    <link rel="shortcut icon" type="image/x-icon" href="img/logomadiun.png">
 
 
     <link rel="stylesheet" href="vendors/bootstrap/dist/css/bootstrap.min.css">
@@ -52,7 +55,7 @@
                     <div class="page-title">
                         <ol class="breadcrumb text-right">
                             <li><a href="#">Dashboard</a></li>
-                            <li><a href="#">Layanan/a></li>
+                            <li><a href="#">Layanan</a></li>
                             <li class="active">Data Layanan</li>
                         </ol>
                     </div>
@@ -101,11 +104,10 @@
 
     <!-- Right Panel -->
 
-
     <script src="vendors/jquery/dist/jquery.min.js"></script>
     <script src="vendors/popper.js/dist/umd/popper.min.js"></script>
     <script src="vendors/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="assets/js/admin.js"></script>
+    <script src="assets/js/main.js"></script>
 
 
     <script src="vendors/datatables.net/js/jquery.dataTables.min.js"></script>
@@ -126,7 +128,7 @@
     $(document).ready(function () {
         $('.ckeditor').ckeditor();
     });
-</script>
+    </script>
 </body>
 
 </html>
