@@ -86,7 +86,7 @@
                                     @foreach ($tupoksi as $data)
                                     <tr>
                                         <td>{{$data->judul}}</td>
-                                        <td>{!! $data->isi !!}</td>
+                                        <td style=" padding: 30px;">{!! $data->isi !!}</td>
                                         <td>
                                                 
                                     <form action="{{ route('tupoksi.destroy',$data->id) }}" method="GET">

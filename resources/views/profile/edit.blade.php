@@ -68,7 +68,7 @@
                 <div class="row justify-content-center align-items-center">
                     <div class="card" style="width: 60rem;">
                         <div class="card-header bg-info">
-                            <h5 style="font-size: 18px; font-family: Arial, Helvetica"><b>Edit Data Pengumuman</h5></b>
+                            <h5 style="font-size: 18px; font-family: Arial, Helvetica"><b>Edit Data Profile</h5></b>
                         </div>
                 @section('content')
               
