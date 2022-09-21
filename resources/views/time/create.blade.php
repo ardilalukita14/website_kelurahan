@@ -71,10 +71,17 @@
                     <label>MASUKKAN JUDUL</label>
                     <input type="text" name="judul" class="form-control" required=""  >
                 </div>
+
+                <div class="form-group">
+                    <label>ISI</label>
+                    <textarea class="ckeditor form-control valid" name="isi"></textarea>
+                </div>
+
                 <div class="form-group">
                     <label>MASUKKAN FOTO</label>
                     <input type="file" name="foto" class="form-control" required="">
                 </div>
+                
                 <input type="submit" value="SIMPAN" class="btn btn-info">
             </form>
             <br></br>

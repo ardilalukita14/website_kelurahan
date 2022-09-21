@@ -74,6 +74,10 @@
                     <input type="text" name="judul" class="form-control" required="" value="{{$time->judul}}" >
                 </div>
                 <div class="form-group">
+                    <label>ISI</label>
+                    <textarea class="ckeditor form-control valid" name="isi" required="" style="width:95%;">{{$time->isi}}</textarea>
+                </div>
+                <div class="form-group">
                     <label>MASUKKAN FOTO</label>
                     <img src="{{asset('foto/'.$time->foto)}}" style="width: 500px; height: 250px;">
                     <br></br>

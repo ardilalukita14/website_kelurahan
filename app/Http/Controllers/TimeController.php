@@ -6,6 +6,7 @@ use App\Models\Time;
 use Illuminate\Http\Request;
 use Alert;
 use Session;
+use Validator;
 
 class TimeController extends Controller
 {
@@ -41,6 +42,7 @@ class TimeController extends Controller
      */
     public function store(Request $request)
     {
+
         $file = $request->file('foto');
         $org = $file->getClientOriginalName();
         $path = 'foto';
@@ -48,6 +50,7 @@ class TimeController extends Controller
 
         $time = new time;
         $time->judul = $request->judul;
+        $time->isi = $request->isi;
         $time->foto = $org;
         $time->save();
         if ($time) {
@@ -91,10 +94,12 @@ class TimeController extends Controller
      */
     public function update(Request $request, $id)
     {
+        
         $foto = $request->file('foto');
         if ($foto == "") {
             $time = time::find($id);
             $time->judul = $request->judul;
+            $time->isi = $request->isi;
             $time->save();
 
            if ($time) {
@@ -105,6 +110,12 @@ class TimeController extends Controller
                 return redirect()->route('time.index');
             }
         } else {
+            $this->validate($request, [
+                'file' => 'required|image|mimes:png,jpg,jpeg',
+                'judul' => 'required',
+                'isi' => 'required'
+            ]);
+
             $file = $request->file('foto');
             $org = $file->getClientOriginalName();
             $path = 'foto';
@@ -112,6 +123,7 @@ class TimeController extends Controller
 
             $time= time::find($id);
             $time->judul = $request->judul;
+            $time->isi = $request->isi;
             $time->foto = $org;
             $time->save();
             if ($time) {

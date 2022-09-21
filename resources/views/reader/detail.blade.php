@@ -96,14 +96,29 @@
 			{{csrf_field()}}
 			<div class="form-group">
                 <textarea class="ckeditor form-control valid" name="isi" required="" placeholder="Masukan Komentar" style="font-size: 16px; font-family: Arial, Helvetica, sans-serif;"></textarea>
+                @error('isi')
+                    <div class="alert alert-danger mt-2">
+                        {{ $message }}
+                    </div>
+                @enderror    
 			</div>
             <br>
 			<div class="form-group">
 				<input type="text" name="nama" required=""  class="form-control" placeholder="Masukan Username" style="font-size: 16px; font-family: Arial, Helvetica, sans-serif;">
+                @error('nama')
+                    <div class="alert alert-danger mt-2">
+                        {{ $message }}
+                    </div>
+                @enderror
 			</div>
             <br>
 			<div class="form-group">
 				<input type="email" name="email" class="form-control" placeholder="Masukan Email" style="font-size: 16px; font-family: Arial, Helvetica, sans-serif;">
+                @error('email')
+                    <div class="alert alert-danger mt-2">
+                        {{ $message }}
+                    </div>
+                @enderror
 			</div>
             <br>
 			<input type="submit" value="KIRIM" class="btn btn-info">

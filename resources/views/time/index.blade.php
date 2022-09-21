@@ -78,6 +78,7 @@
                                     <thead>
                                         <tr>
                                         <th>Judul</th>
+                                        <th>Isi</th>
                                         <th>Foto</th>
                                         <th width="200px">Action</th>    
                                         </tr>
@@ -86,6 +87,7 @@
                                     @foreach ($time as $data)
                                     <tr>
                                         <td>{{$data->judul}}</td>
+                                        <td>{!!$data->isi!!}</td>
                                         <td>{{$data->foto}}</td>
                                         <td>
                                                 

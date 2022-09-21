@@ -101,6 +101,12 @@ class MainController extends Controller
      */
     public function update(Request $request, $id)
     {
+        $this->validate($request, [
+            'nama'     => 'required',
+            'email'     => 'required',
+            'isi'   => 'required',
+         ]);
+
         $komen = new Komentar;
         $komen->nama = $request->nama;
         $komen->email = $request->email;

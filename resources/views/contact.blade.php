@@ -73,26 +73,48 @@
                         <div class="row g-3">
                             <div class="col-md-6">
                                 <div class="form-floating">
-                                    <input class="form-control valid" name="nama" id="nama" type="text" placeholder="Nama Lengkap">
+                                    <input class="form-control valid" name="nama" id="nama" type="text" placeholder="Nama Lengkap" required>
                                     <label for="nama">Nama Lengkap</label>
+
+                                    @error('nama')
+                                    <div class="alert alert-danger mt-2">
+                                        {{ $message }}
+                                    </div>
+                                @enderror
+
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-floating">
-                                    <input class="form-control valid" name="email" id="email" type="email" placeholder="Email">
+                                    <input class="form-control valid" name="email" id="email" type="email" placeholder="Email" required>
                                     <label for="email">Email</label>
+                                    @error('email')
+                                    <div class="alert alert-danger mt-2">
+                                        {{ $message }}
+                                    </div>
+                                @enderror
                                 </div>
                             </div>
                             <div class="col-12">
                                 <div class="form-floating">
-                                     <input class="form-control" name="subjek" id="subjek" type="text" placeholder="Subjek">
+                                     <input class="form-control" name="subjek" id="subjek" type="text" placeholder="Subjek" required>
                                     <label for="subjek">Subjek</label>
+                                    @error('subjek')
+                                    <div class="alert alert-danger mt-2">
+                                        {{ $message }}
+                                    </div>
+                                @enderror
                                 </div>
                             </div>
                             <div class="col-12">
                                 <div class="form-floating">
                                 <!-- <label for="pesan" style="margin-bottom:-100px;">Pesan</label> -->
-                                <textarea class="ckeditor form-control valid" name="pesan" id="pesan" style="height: 100px"></textarea>                        
+                                <textarea class="ckeditor form-control valid" name="pesan" id="pesan" style="height: 100px" required></textarea>       
+                                @error('pesan')
+                                    <div class="alert alert-danger mt-2">
+                                        {{ $message }}
+                                    </div>
+                                @enderror                 
                                 </div>
                             </div>
                             <div class="col-12">

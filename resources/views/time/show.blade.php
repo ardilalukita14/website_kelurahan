@@ -68,6 +68,7 @@
                         <div class="card-body">
                             <ul class="list-group list-group-flush">
                             <li class="list-group-item" style="font-size: 16px;"><b>Judul: </b>{{$time->judul}}</li>
+                            <li class="list-group-item" style="font-size: 16px;"><b>Isi: </b>{{$time->isi}}</li>
                                 <li class="list-group-item" style="font-size: 16px;"><b>Foto</li>
                                 <li class="list-group-item"><img style="width: 200px" src="{{asset('foto/'.$time->foto)}}"></li>
                             </ul>

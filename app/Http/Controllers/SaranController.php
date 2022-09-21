@@ -42,6 +42,13 @@ class SaranController extends Controller
      */
     public function store(Request $request)
     {
+        $this->validate($request, [
+            'nama'     => 'required',
+            'email'     => 'required',
+            'pesan'   => 'required',
+            'subjek'   => 'required',
+         ]);
+         
         saran::create([
             'nama' => $request->nama,
             'email' => $request->email,

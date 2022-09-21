@@ -234,7 +234,7 @@
                     <img class="img-fluid bg-light rounded-circle p-2 mx-auto mb-4" src="img/logomadiun3.png" style="width: 100px; height: 100px;">
                     <div class="testimonial-text rounded text-center p-4">
                     <h5 class="mb-1">{{$pgm->judul,0,20}}</h5>
-                        <p style="margin-top:25px;">{{$pgm->isi}}</p>
+                        <p style="margin-top:25px;">{!! $pgm->isi !!}</p>
                         <span class="fst-italic" style="font-size: 13px;"><i class="menu-icon fa fa-clock" aria-hidden="true"></i>
                         {{$pgm->tanggal}}</span>
                     </div>
