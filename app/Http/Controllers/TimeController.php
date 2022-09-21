@@ -94,7 +94,7 @@ class TimeController extends Controller
      */
     public function update(Request $request, $id)
     {
-        
+
         $foto = $request->file('foto');
         if ($foto == "") {
             $time = time::find($id);
@@ -110,11 +110,6 @@ class TimeController extends Controller
                 return redirect()->route('time.index');
             }
         } else {
-            $this->validate($request, [
-                'file' => 'required|image|mimes:png,jpg,jpeg',
-                'judul' => 'required',
-                'isi' => 'required'
-            ]);
 
             $file = $request->file('foto');
             $org = $file->getClientOriginalName();

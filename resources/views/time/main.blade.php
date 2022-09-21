@@ -71,7 +71,8 @@
             <div class="position-relative mt-auto">
                 <img class="img-fluid" src="{{asset('foto/'.$all->foto)}}" style="display:block; margin:auto;" alt="">
             </div>
-            <p>{!!$all->isi!!}</p><br>
+            <br>
+            <p style="text-align: center">{!!$all->isi!!}</p><br>
             <br>
             @endforeach
         </div>
